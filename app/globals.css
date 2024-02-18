@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* hero section (home) */
+.TabsTrigger[data-state="active"] {
+  background-color: #000929 !important;
+  color: white !important;
+}
+
+/* tenants section (home) */
+.TabsTrigger_Tenants[data-state="active"] {
+  color: #000929 !important;
+}
+
+/* rent  section (home) */
+.SelectTrigger svg {
+  display: none !important;
+}
+.SelectTrigger .place svg {
+  display: block !important;
+}
+.SelectTrigger[data-state="closed"],
+.SelectTrigger[data-state="open"] {
+  border: 0px solid white !important;
+  background-color: white;
+  box-shadow: none !important;
+}
