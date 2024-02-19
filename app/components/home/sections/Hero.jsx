@@ -25,9 +25,9 @@ export default function Hero() {
               <h1 className="text-[35px] md:text[40px] lg:text-[64px] text-primary font-extrabold leading-[45px] md:leading-[70px]">
                 Buy, rent, or sell your property
               </h1>
-              <div className="flex mt-[18px] md:mt-[27px] items-start">
+              <div className="flex mt-[25px] md:mt-[27px] items-start">
                 <Image
-                  className="inline-block h-[40px] md:h-auto md:w-auto -translate-y-[12px] sm:translate-y-0"
+                  className="inline-block w-[67px] md:h-[40px] md:h-auto md:w-auto -translate-y-[12px] sm:translate-y-0"
                   src={"/images/hero/heroleft1.png"}
                   alt=""
                 />
@@ -54,7 +54,7 @@ export default function Hero() {
                     </span>
                   </div>
                   <div>
-                    <div className="w-[1px] h-[40px] bg-[#DADAE3] translate-y-5"></div>
+                    <div className="w-[1px] h-[40px] bg-[#DADAE3] translate-y-2 md:translate-y-5"></div>
                   </div>
                   <div>
                     <h1 className="text-[30px] md:text-[40px]  font-bold inline-block">

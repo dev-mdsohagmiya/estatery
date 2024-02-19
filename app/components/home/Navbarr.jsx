@@ -73,7 +73,7 @@ export default function Navbarr() {
             className="sm:hidden"
           />
           <NavbarBrand className="items-center">
-            <Link className="items-center relative hidden md:block" href={"/"}>
+            <Link className="items-center relative" href={"/"}>
               <AcmeLogo />
             </Link>
           </NavbarBrand>
