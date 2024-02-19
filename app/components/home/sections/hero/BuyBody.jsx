@@ -25,7 +25,7 @@ export default function BuyBody() {
             </h1>
             <Select className="border-none border-0 -translate-x-[15px]">
               <SelectTrigger
-                className="border-0 focus-none text-primary text-[16px] md:text-[18px] font-medium -translate-x-[12px]"
+                className="SelectTrigger border-0 focus-none text-primary text-[16px] md:text-[18px] font-medium -translate-x-[12px]"
                 variant="outline"
               >
                 <SelectValue className="" placeholder="Barcelona, Spain" />
