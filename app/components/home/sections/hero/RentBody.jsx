@@ -50,10 +50,10 @@ export default function BuyBody() {
       <div className="grid gap-3">
         <div className="">
           <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-            Property Type
+            When
           </h1>
           <div className="-translate-x-[17px]">
-            <HeaderFilterDrop type={"Office"} />
+            <RentDate />
           </div>
         </div>
         {/* <div>

@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useState } from "react";
 import {
   Navbar,
   NavbarBrand,
@@ -30,8 +30,21 @@ import { BsChevronDown } from "react-icons/bs";
 import NavLink from "./sections/NavLink.jsx";
 
 export default function Navbarr() {
+  const navRef = useRef();
+
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const [ishide, setIsHide] = useState(false);
   const usepath = usePathname();
+
+  const GetNavStatus = () => {
+    // Accessing the 'id' attribute of the nav element
+    if (navRef.current) {
+      const navId = navRef.current.getAttribute("data-menu-open");
+      console.log("Nav element ID:", navId);
+    }
+  };
+
+  GetNavStatus();
 
   const icons = {
     chevron: <ChevronDown fill="currentColor" size={16} />,
@@ -55,12 +68,16 @@ export default function Navbarr() {
     "Signup",
   ];
 
-  // onMenuOpenChange={setIsMenuOpen}
+  const handleHideManu = () => {
+    setIsMenuOpen(false);
+    setIsHide(false);
+  };
 
   if (usepath.includes("user")) null;
   else
     return (
       <Navbar
+        useRef={navRef}
         maxWidth="xl"
         className="bg-white  pt-4 border-b-[1px] border-[#E4E3F3]"
       >
@@ -171,7 +188,7 @@ export default function Navbarr() {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className="pb-[50px]">
+        <NavbarMenu className={`pb-[50px] ${ishide ? "hidden" : ""}`}>
           <NavbarMenuItem className="bg-primary">
             <hr className="h-[2px] -px-10" />
             <div className="w-full h-[5px] bg-primary"></div>
@@ -179,16 +196,16 @@ export default function Navbarr() {
           <NavbarMenuItem>
             <br />
           </NavbarMenuItem>
-          <NavbarMenuItem>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink line={true} href={"/"} text={"Home"} />
           </NavbarMenuItem>
-          <NavbarMenuItem>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink line={true} href={"/rent"} text={"Rent"} />
           </NavbarMenuItem>
-          <NavbarMenuItem>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink line={true} href={"/buy"} text={"Buy"} />
           </NavbarMenuItem>
-          <NavbarMenuItem>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink line={true} href={"/sell"} text={"Sell"} />
           </NavbarMenuItem>
           <NavbarMenuItem>
@@ -253,6 +270,7 @@ export default function Navbarr() {
           </NavbarMenuItem>
           <NavbarMenuItem>
             <Button
+              onClick={() => handleHideManu()}
               href="/user/dashboard"
               as={Link}
               className="text-primary w-full text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7"
@@ -263,6 +281,7 @@ export default function Navbarr() {
           </NavbarMenuItem>
           <NavbarMenuItem>
             <Button
+              onClick={() => handleHideManu()}
               href="/user/dashboard"
               as={Link}
               className="bg-primary w-full text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
