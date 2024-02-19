@@ -52,10 +52,10 @@ export default function ReplaceBody() {
           <div>
             {" "}
             <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-              When
+              Price
             </h1>
             <div className="-translate-x-[17px]">
-              <RentDate />
+              <HeaderFilterDrop type={"$250 - $2500"} />
             </div>
           </div>
         </div>
@@ -68,7 +68,7 @@ export default function ReplaceBody() {
             Property Type
           </h1>
           <div className="-translate-x-[17px]">
-            <HeaderFilterDrop type={"Office"} />
+            <HeaderFilterDrop type={"House"} />
           </div>
         </div>
         {/* <div>

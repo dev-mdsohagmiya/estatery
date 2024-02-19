@@ -52,10 +52,10 @@ export default function SellBody() {
           <div>
             {" "}
             <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-              When
+              Price
             </h1>
             <div className="-translate-x-[17px]">
-              <RentDate />
+              <HeaderFilterDrop type={"$250 - $2500"} />
             </div>
           </div>
         </div>
@@ -86,8 +86,8 @@ export default function SellBody() {
       </div>
       <div className="col-span-12 md:col-span-3 flex justify-center items-center">
         <Link className="w-full md:w-auto" href={"#"}>
-          <Button className="px-5 w-full py-6 w-full md:w-auto cursor-pointer	">
-            <ButtonSearchIcon />
+          <Button className="px-5 py-6 w-full md:w-auto cursor-pointer	w-full">
+            <ButtonSearchIcon />{" "}
             <span className="text-[16px] font-bold">Browse Properties</span>
           </Button>
         </Link>
