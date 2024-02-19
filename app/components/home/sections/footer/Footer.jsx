@@ -16,7 +16,7 @@ export const Footer = () => {
   } else
     return (
       <div className="flex justify-center bg-primary py-20">
-        <div className="w-full max-w-[1280px] mx-auto px-4 md:px-8    ">
+        <div className="w-full max-w-[1280px] mx-auto px-5 md:px-8    ">
           <div className="grid grid-cols-12">
             <div className="col-span-6 md:col-span-3">
               <div>
