@@ -50,11 +50,12 @@ export default function BuyBody() {
       <div className="col-span-12 md:col-span-3 flex ">
         <div className="flex justify-start	  inline-block ">
           <div>
+            {" "}
             <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-              When
+              Price
             </h1>
             <div className="-translate-x-[17px]">
-              <RentDate />
+              <HeaderFilterDrop type={"$250 - $2500"} />
             </div>
           </div>
         </div>
@@ -67,25 +68,25 @@ export default function BuyBody() {
             Property Type
           </h1>
           <div className="-translate-x-[17px]">
-            <HeaderFilterDrop type={"Office"} />
+            <HeaderFilterDrop type={"House"} />
           </div>
         </div>
         {/* <div>
-          {" "}
-          <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-            Farm Appartment
-          </h1>
-          <div className="-translate-x-[17px]">
-            <HeaderFilterDrop />
-          </div>
-        </div> */}
+                {" "}
+                <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
+                  Farm Appartment
+                </h1>
+                <div className="-translate-x-[17px]">
+                  <HeaderFilterDrop />
+                </div>
+              </div> */}
       </div>
       <div className="col-span-1 hidden  md:block flex justify-center">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>
       <div className="col-span-12 md:col-span-3 flex justify-center items-center">
         <Link className="w-full md:w-auto" href={"#"}>
-          <Button className=" px-5 py-6 w-full w-full md:w-auto cursor-pointer	">
+          <Button className="px-5 py-6 w-full md:w-auto cursor-pointer	w-full">
             <ButtonSearchIcon />{" "}
             <span className="text-[16px] font-bold">Browse Properties</span>
           </Button>

@@ -68,7 +68,7 @@ export default function SellBody() {
             Property Type
           </h1>
           <div className="-translate-x-[17px]">
-            <HeaderFilterDrop type={"House"} />
+            <HeaderFilterDrop type={"Office"} />
           </div>
         </div>
         {/* <div>
