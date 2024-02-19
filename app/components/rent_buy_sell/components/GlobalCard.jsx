@@ -9,7 +9,7 @@ import icon3 from "@/public/images/rent/icons/Icon-2.png";
 import leftarrow from "@/public/images/rent/icons/leftarrow.png";
 export default function GlobalCard({ src }) {
   return (
-    <div className="w-[97%] mx-auto sm:w-full relative mb-[90px]">
+    <div className=" w-full relative mb-[90px] ">
       <div className="relative">
         <Image src={src} alt="" className="w-full" />
         <button className="absolute  top-4 right-[4%]">
@@ -23,7 +23,7 @@ export default function GlobalCard({ src }) {
           </div>
         </div>
       </div>
-      <div className="px-[7%] absolute -bottom-[85px] w-full">
+      <div className="px-[5%] md:px-[7%] absolute -bottom-[85px] w-full">
         <Card className="p-5 shadow-lg">
           <div>
             <div className="flex">
