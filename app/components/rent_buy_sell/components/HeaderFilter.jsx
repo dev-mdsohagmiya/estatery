@@ -100,9 +100,8 @@ export default function HeaderFilter({ hideDate }) {
       </div>
       <div className="col-span-12 md:col-span-3 flex justify-center items-center">
         <Button className="px-5 py-6 w-full md:w-auto">
-          <span className="text-[16px] font-bold">
-            <ButtonSearchIcon /> Browse Properties
-          </span>
+          <ButtonSearchIcon />{" "}
+          <span className="text-[16px] font-bold">Browse Properties</span>
         </Button>
       </div>
     </div>
