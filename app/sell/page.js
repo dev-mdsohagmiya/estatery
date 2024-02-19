@@ -3,7 +3,7 @@ import { RentBuySellPage } from "../components";
 export default function Rent() {
   return (
     <main>
-      <RentBuySellPage defaultTab={"rent"} />
+      <RentBuySellPage defaultTab={"sell"} />
     </main>
   );
 }

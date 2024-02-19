@@ -1,4 +1,5 @@
 import { Keyword } from "../Keyword";
+import { PaginationSBR } from "../Pagination";
 import HeaderFilter from "../components/HeaderFilter";
 import RentBody from "./RentBody";
 import { Card } from "@/components/ui/card";
@@ -13,6 +14,9 @@ export default function Sell() {
       </div>
       <div className="mt-2">
         <RentBody />
+      </div>
+      <div className="pb-[100px]">
+        <PaginationSBR />
       </div>
     </div>
   );

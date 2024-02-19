@@ -6,7 +6,7 @@ import Buy from "../body/Buy";
 import Sell from "../body/Sell";
 import { useEffect, useRef, useState } from "react";
 
-export default function HeaderAndBody() {
+export default function HeaderAndBody({ defaultTab }) {
   const [title, setTitle] = useState("");
   const TabsTriggerBuyRef = useRef(null);
   const TabsTriggerRentRef = useRef(null);
@@ -38,7 +38,7 @@ export default function HeaderAndBody() {
       </h1>
       <div className="mt-[12px] md:mt-[16px]">
         <div>
-          <Tabs defaultValue="rent" className="">
+          <Tabs defaultValue={defaultTab} className="">
             <TabsList className="grid bg-white w-full grid-cols-3 w-full md:w-[400px]">
               <TabsTrigger
                 ref={TabsTriggerRentRef}
@@ -59,7 +59,7 @@ export default function HeaderAndBody() {
               <TabsTrigger
                 onClick={() => GetActiveTabStatus()}
                 ref={TabsTriggerSellRef}
-                className="TabsTrigger  border-[1px] border-grayline rounded-[0px] py-[12px] text-[16px] md:text-[18px] font-bold"
+                className="TabsTrigger  border-[1px] border-grayline rounded-[0px] py-[12px] text-[16px] rounded-tr-lg md:text-[18px] font-bold"
                 value="sell"
               >
                 Sell

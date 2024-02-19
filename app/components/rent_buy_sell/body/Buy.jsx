@@ -1,8 +1,10 @@
 import { Keyword } from "../Keyword";
+import { PaginationSBR } from "../Pagination";
 import HeaderFilter from "../components/HeaderFilter";
 import BuyBody from "./BuyBody";
 import RentBody from "./RentBody";
 import { Card } from "@/components/ui/card";
+
 export default function Buy() {
   return (
     <div>
@@ -14,6 +16,9 @@ export default function Buy() {
       </div>
       <div className="mt-2">
         <BuyBody />
+      </div>
+      <div className="pb-[100px]">
+        <PaginationSBR />
       </div>
     </div>
   );

@@ -27,6 +27,7 @@ import Link from "next/link.js";
 import { usePathname } from "next/navigation.js";
 import { Button } from "@/components/ui/button";
 import { BsChevronDown } from "react-icons/bs";
+import NavLink from "./sections/NavLink.jsx";
 
 export default function Navbarr() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -82,29 +83,17 @@ export default function Navbarr() {
           className="hidden sm:flex gap-6 text-graylight"
           justify="center"
         >
-          <NavbarItem isActive>
-            <Link
-              href="/"
-              className="text-[16px] font-normal text-graylight"
-              aria-current="page"
-            >
-              Home
-            </Link>
+          <NavbarItem>
+            <NavLink href={"/"} text={"Home"} />
           </NavbarItem>
           <NavbarItem>
-            <Link color="graylight" href="/rent">
-              Rent
-            </Link>
+            <NavLink href={"/rent"} text={"Rent"} />
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Buy
-            </Link>
+            <NavLink href={"/buy"} text={"Buy"} />
           </NavbarItem>
           <NavbarItem>
-            <Link color="foreground" href="#">
-              Sell
-            </Link>
+            <NavLink href={"/sell"} text={"Sell"} />
           </NavbarItem>
           <Dropdown>
             <NavbarItem>
