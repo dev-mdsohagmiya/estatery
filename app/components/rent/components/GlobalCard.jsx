@@ -3,12 +3,16 @@ import img1 from "@/public/images/rent/img1.png";
 import fav from "@/public/images/rent/icons/fav.png";
 import popular from "@/public/images/rent/icons/popular.png";
 import { Card } from "@/components/ui/card";
+import icon1 from "@/public/images/rent/icons/Icon.png";
+import icon2 from "@/public/images/rent/icons/Icon-1.png";
+import icon3 from "@/public/images/rent/icons/Icon-2.png";
+import leftarrow from "@/public/images/rent/icons/leftarrow.png";
 export default function GlobalCard() {
   return (
     <div className="w-full">
       <div className="relative">
         <Image src={img1} alt="" className="w-full" />
-        <button className="absolute  top-4 right-[18%]">
+        <button className="absolute  top-4 right-[4%]">
           {" "}
           <Image src={fav} className="" alt="" />
         </button>
@@ -31,10 +35,17 @@ export default function GlobalCard() {
               </span>
             </div>
             <div className="mt-[10px]">
-              <div>
-                <h4 className="text-[14px] md:text-[16px] font-[600] text-primary">
-                  Palm Harbor
-                </h4>
+              <div className="grid grid-cols-12">
+                <div className="col-span-8">
+                  <h4 className="text-[14px] md:text-[16px] font-[600] text-primary">
+                    Palm Harbor
+                  </h4>
+                </div>
+                <div className="col-span-4 flex justify-end ">
+                  <button className="translate-y-5">
+                    <Image alt="" src={leftarrow} />
+                  </button>
+                </div>
               </div>
               <div className="mt-[6px]">
                 <p className="text-[13px] text-graylight">
@@ -42,7 +53,27 @@ export default function GlobalCard() {
                 </p>
               </div>
             </div>
-            <div className="h-[2px] mt-[5px] bg-[#E4E3F3] w-full"></div>
+            <div className="h-[2px] mt-[7px] bg-[#E4E3F3] w-full"></div>
+            <div className="flex justify-between mt-[7px]">
+              <div className="flex gap-1">
+                <Image src={icon1} alt="" />
+                <span className="text-[13px] font-medium text-graylight mt-[2px]">
+                  4 bed
+                </span>
+              </div>
+              <div className="flex gap-1">
+                <Image src={icon2} alt="" />
+                <span className="text-[13px] font-medium text-graylight mt-[2px]">
+                  1 Bathrooms
+                </span>
+              </div>
+              <div className="flex gap-1">
+                <Image src={icon3} alt="" />
+                <span className="text-[13px] font-medium text-graylight mt-[2px]">
+                  5x7 m²
+                </span>
+              </div>
+            </div>
           </div>
         </Card>
       </div>
