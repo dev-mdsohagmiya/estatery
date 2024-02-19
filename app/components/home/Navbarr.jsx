@@ -69,14 +69,18 @@ export default function Navbarr() {
   ];
 
   const handleHideManu = () => {
-    setIsMenuOpen(false);
-    setIsHide(false);
+    setIsMenuOpen(true);
+    if (isMenuOpen) {
+      setIsMenuOpen(false);
+    }
   };
 
   if (usepath.includes("user")) null;
   else
     return (
       <Navbar
+        isMenuOpen={isMenuOpen}
+        onMenuOpenChange={setIsMenuOpen}
         useRef={navRef}
         maxWidth="xl"
         className="bg-white  pt-4 border-b-[1px] border-[#E4E3F3]"
@@ -84,7 +88,6 @@ export default function Navbarr() {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
           />
           <NavbarBrand className="items-center">
             <Link className="items-center relative" href={"/"}>
@@ -188,7 +191,7 @@ export default function Navbarr() {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu className={`pb-[50px] ${ishide ? "hidden" : ""}`}>
+        <NavbarMenu className={`pb-[50px] `}>
           <NavbarMenuItem className="bg-primary">
             <hr className="h-[2px] -px-10" />
             <div className="w-full h-[5px] bg-primary"></div>
