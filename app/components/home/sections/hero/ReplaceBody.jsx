@@ -65,17 +65,16 @@ export default function ReplaceBody() {
               </div>
             </div> */}
       </div>
-      <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
+      <div className="hidden  md:block w-[1px] h-[40px] bg-grayline translate-y-7"></div>
 
       <div className="grid gap-3">
-        <div className="">
-          <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-            Property Type
-          </h1>
-          <div className="-translate-x-[17px]">
-            <HeaderFilterDrop type={"Hourse"} />
-          </div>
+        <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
+          Property Type
+        </h1>
+        <div className="-translate-x-[17px]">
+          <HeaderFilterDrop type={"Hourse"} />
         </div>
+
         {/* <div>
               {" "}
               <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">

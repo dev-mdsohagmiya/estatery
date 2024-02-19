@@ -59,7 +59,7 @@ export default function BuyBody() {
           </div>
         </div>
       </div>
-      <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
+      <div className="hidden  md:block w-[1px] h-[40px] bg-grayline translate-y-7"></div>
 
       <div className="grid gap-3">
         <div className="">

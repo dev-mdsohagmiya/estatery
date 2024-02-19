@@ -15,10 +15,10 @@ export function HeaderFilterDrop({ type }) {
     <Select>
       <SelectTrigger className="border-0 SelectTrigger  font-medium text-[14px] md:text-[16px] text-[#000929] ml-1">
         <SelectValue
-          className=" font-medium text-[14px] md:text-[16px] text-[#000929]"
+          className="text-primary text-[16px] md:text-[18px] font-medium"
           placeholder={
             <div className="place flex">
-              <span className=" font-medium ml-[3px] text-[14px] md:text-[16px] text-[#000929]">
+              <span className="   ml-[3px] text-primary text-[16px] md:text-[18px] font-medium">
                 {type}
               </span>
               <BsChevronDown className="mt-[8px] ml-[5px]" />
