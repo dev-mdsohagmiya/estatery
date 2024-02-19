@@ -11,6 +11,7 @@ import { Button } from "@/components/ui/button";
 import { RentDate } from "./RentDate";
 import Link from "next/link";
 import { HeaderFilterDrop } from "@/app/components/rent_buy_sell/components/HeaderFilterDrop";
+import ButtonSearchIcon from "./ButtonSearchIcon";
 
 export default function BuyBody() {
   return (
@@ -84,8 +85,9 @@ export default function BuyBody() {
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>
       <div className="col-span-12 md:col-span-3 flex justify-center items-center">
-        <Link href={"#"}>
-          <Button className="px-5 py-6 w-full md:w-auto cursor-pointer	">
+        <Link className="w-full md:w-auto" href={"#"}>
+          <Button className=" px-5 py-6 w-full w-full md:w-auto cursor-pointer	">
+            <ButtonSearchIcon />{" "}
             <span className="text-[16px] font-bold">Browse Properties</span>
           </Button>
         </Link>

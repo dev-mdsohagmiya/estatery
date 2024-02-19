@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { RentDate } from "./RentDate";
 import Link from "next/link";
+import ButtonSearchIcon from "./ButtonSearchIcon";
 
 export default function RentBody() {
   return (
@@ -61,9 +62,14 @@ export default function RentBody() {
       <div className="col-span-1 hidden  md:block flex justify-center">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex justify-center items-center">
-        <Link href={"#"} style={{ cursor: "pointer" }}>
+      <div className="col-span-12 md:col-span-3 flex justify-center items-center w-full">
+        <Link
+          href={"#"}
+          className="w-full md:w-auto"
+          style={{ cursor: "pointer" }}
+        >
           <Button className="px-5 py-6 w-full md:w-auto cursor-pointer">
+            <ButtonSearchIcon />
             <span className="text-[16px] font-bold">Browse Properties</span>
           </Button>
         </Link>
