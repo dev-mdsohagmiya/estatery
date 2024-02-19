@@ -70,8 +70,8 @@ export default function Hero() {
                 <HeroTabs />
               </div>
             </div>
-            <div className="relative col-span-12 md:col-span-6  lg:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	">
-              <div className="w-full md:w-[220px] mt-[110px]">
+            <div className="relative col-span-12 md:col-span-6  lg:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	md:h-[80%]">
+              <div className="w-full md:w-[220px] mt-[110px] z-10">
                 <HeroLeftCard />
               </div>
             </div>

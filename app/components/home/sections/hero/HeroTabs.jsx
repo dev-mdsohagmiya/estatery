@@ -12,6 +12,9 @@ import {
 } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import RentBody from "./RentBody";
+import BuyBody from "./BuyBody";
+import SellBody from "./SellBody";
+import ReplaceBody from "./ReplaceBody";
 
 export function HeroTabs() {
   return (
@@ -43,7 +46,7 @@ export function HeroTabs() {
         </TabsTrigger>
       </TabsList>
       <TabsContent
-        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[800px] px-[5px] md:full rounded-tl-none rounded-tr-none"
+        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[1180px] px-[5px] md:full rounded-tl-none rounded-tr-none"
         value="rent"
       >
         <Card className="rounded-tl-none rounded-tr-lg rounded-bl-lg rounded-tr-none md:rounded-tr-lg rounded-br-lg">
@@ -51,27 +54,27 @@ export function HeroTabs() {
         </Card>
       </TabsContent>
       <TabsContent
-        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[800px] px-[5px] md:full rounded-tl-none rounded-tr-none"
+        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[1180px] px-[5px] md:full rounded-tl-none rounded-tr-none"
         value="buy"
       >
         <Card className="rounded-tl-none rounded-tr-lg rounded-bl-lg rounded-tr-none md:rounded-tr-lg rounded-br-lg">
-          <RentBody />
+          <BuyBody />
         </Card>
       </TabsContent>
       <TabsContent
-        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[800px] px-[5px] md:full rounded-tl-none rounded-tr-none"
+        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[1180px] px-[5px] md:full rounded-tl-none rounded-tr-none"
         value="sell"
       >
         <Card className="rounded-tl-none rounded-tr-lg rounded-bl-lg rounded-tr-none md:rounded-tr-lg rounded-br-lg">
-          <RentBody />
+          <SellBody />
         </Card>
       </TabsContent>
       <TabsContent
-        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[800px] px-[5px] md:full rounded-tl-none rounded-tr-none"
+        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[1180px] px-[5px] md:full rounded-tl-none rounded-tr-none"
         value="replace"
       >
         <Card className="rounded-tl-none rounded-tr-lg rounded-bl-lg rounded-tr-none md:rounded-tr-lg rounded-br-lg">
-          <RentBody />
+          <ReplaceBody />
         </Card>
       </TabsContent>
     </Tabs>

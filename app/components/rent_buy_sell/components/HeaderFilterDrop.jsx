@@ -10,7 +10,7 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { BsChevronDown } from "react-icons/bs";
-export function HeaderFilterDrop() {
+export function HeaderFilterDrop({ type }) {
   return (
     <Select>
       <SelectTrigger className="border-0 SelectTrigger  font-medium text-[14px] md:text-[16px] text-[#000929] ml-1">
@@ -18,10 +18,10 @@ export function HeaderFilterDrop() {
           className=" font-medium text-[14px] md:text-[16px] text-[#000929]"
           placeholder={
             <div className="place flex">
-              <span className=" font-medium text-[14px] md:text-[16px] text-[#000929]">
-                $250 - $2500
-              </span>{" "}
-              <BsChevronDown className="mt-[3px] ml-[5px]" />
+              <span className=" font-medium ml-[3px] text-[14px] md:text-[16px] text-[#000929]">
+                {type}
+              </span>
+              <BsChevronDown className="mt-[8px] ml-[5px]" />
             </div>
           }
         />
