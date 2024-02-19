@@ -1,8 +1,8 @@
 import Image from "next/image";
 import React from "react";
-import icon1 from "@/public/icons/newway/icon.png";
-import icon2 from "@/public/icons/newway/icon-1.png";
-import icon3 from "@/public/icons/newway/icon-2.png";
+import icon1 from "@/public/icons/newway/img1.png";
+import icon2 from "@/public/icons/newway/img2.png";
+import icon3 from "@/public/icons/newway/img3.png";
 export const LeftCard = () => (
   <div>
     <div className="grid gap-[20px] md:gap-[25px]">
