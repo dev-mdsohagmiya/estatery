@@ -72,7 +72,7 @@ export default function HeaderFilter({ hideDate }) {
               Price
             </h1>
             <div className="-translate-x-[17px]">
-              <HeaderFilterDrop />
+              <HeaderFilterDrop type={"$250 - $2500"} />
             </div>
           </div>
         </div>
@@ -88,7 +88,7 @@ export default function HeaderFilter({ hideDate }) {
               Property type
             </h1>
             <div className="-translate-x-[17px]">
-              <HeaderFilterDrop />
+              <HeaderFilterDrop type={"House"} />
             </div>
           </div>
         </div>
