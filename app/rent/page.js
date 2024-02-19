@@ -1,9 +1,9 @@
-import { RentPage } from "../components";
+import { RentBuySellPage } from "../components";
 
 export default function Rent() {
   return (
     <main>
-      <RentPage />
+      <RentBuySellPage />
     </main>
   );
 }

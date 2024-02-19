@@ -84,7 +84,7 @@ export default function Navbarr() {
         >
           <NavbarItem isActive>
             <Link
-              href="/courses"
+              href="/"
               className="text-[16px] font-normal text-graylight"
               aria-current="page"
             >
@@ -92,7 +92,7 @@ export default function Navbarr() {
             </Link>
           </NavbarItem>
           <NavbarItem>
-            <Link color="graylight" href="#">
+            <Link color="graylight" href="/rent">
               Rent
             </Link>
           </NavbarItem>

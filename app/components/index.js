@@ -8,7 +8,8 @@ import { NewWay } from "./home/sections/new_way/NewWay";
 import Questions from "./home/sections/questions/Questions";
 import { Reference } from "./home/sections/reference/Reference";
 import { Tenants } from "./home/sections/tenants/Tenants";
-import RentPage from "./rent/RentPage";
+import RentBuySellPage from "./rent_buy_sell/RentBuySellPage";
+RentBuySellPage;
 
 export {
   Reference,
@@ -21,5 +22,5 @@ export {
   NewWay,
   NewsLetter,
   BasedOnYourLocation,
-  RentPage,
+  RentBuySellPage,
 };

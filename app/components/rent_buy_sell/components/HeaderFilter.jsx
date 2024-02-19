@@ -11,9 +11,9 @@ import { Button } from "@/components/ui/button";
 import { RentDate } from "../../home/sections/hero/RentDate";
 import { HeaderFilterDrop } from "./HeaderFilterDrop";
 
-export default function HeaderFilter() {
+export default function HeaderFilter({ hideDate }) {
   return (
-    <div className="flex justify-between py-5 px-5">
+    <div className="grid gap-3 md:flex  justify-between py-5 px-5">
       <div className="col-span-12 md:col-span-3 flex ">
         <div className="flex content-between	 inline-block">
           <div>
@@ -41,10 +41,14 @@ export default function HeaderFilter() {
           </div>
         </div>
       </div>
-      <div className="col-span-1 hidden  md:block">
+      <div
+        className={`col-span-1 hidden   ${hideDate ? "hidden" : "md:block"}`}
+      >
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex ">
+      <div
+        className={`col-span-12 md:col-span-3 flex  ${hideDate ? "hidden" : ""}`}
+      >
         <div className="flex justify-start	  inline-block ">
           <div>
             {" "}
@@ -60,7 +64,7 @@ export default function HeaderFilter() {
       <div className="col-span-1 hidden  md:block flex justify-center">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex justify-center items-center">
+      <div className="col-span-12 md:col-span-3 flex md:justify-center items-center">
         <div className="flex justify-start	  inline-block ">
           <div>
             {" "}
@@ -76,7 +80,7 @@ export default function HeaderFilter() {
       <div className="col-span-1 hidden  md:block flex justify-center">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex justify-center items-center">
+      <div className="col-span-12 md:col-span-3 flex md:justify-center items-center">
         <div className="flex justify-start	  inline-block ">
           <div>
             {" "}

@@ -7,11 +7,11 @@ import icon1 from "@/public/images/rent/icons/Icon.png";
 import icon2 from "@/public/images/rent/icons/Icon-1.png";
 import icon3 from "@/public/images/rent/icons/Icon-2.png";
 import leftarrow from "@/public/images/rent/icons/leftarrow.png";
-export default function GlobalCard() {
+export default function GlobalCard({ src }) {
   return (
-    <div className="w-full">
+    <div className="w-[97%] mx-auto sm:w-full relative mb-[90px]">
       <div className="relative">
-        <Image src={img1} alt="" className="w-full" />
+        <Image src={src} alt="" className="w-full" />
         <button className="absolute  top-4 right-[4%]">
           {" "}
           <Image src={fav} className="" alt="" />
@@ -23,7 +23,7 @@ export default function GlobalCard() {
           </div>
         </div>
       </div>
-      <div className="px-[7%] -translate-y-[85px]">
+      <div className="px-[7%] absolute -bottom-[85px] w-full">
         <Card className="p-5 shadow-lg">
           <div>
             <div className="flex">
