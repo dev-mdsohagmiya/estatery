@@ -14,6 +14,7 @@ import sell from "@/public/images/basedonyour/sell.png";
 import rent from "@/public/images/basedonyour/rent.png";
 import SearchInput from "./SearchInput";
 import CardBOUL from "./Card";
+import RentBody from "./RentBody";
 
 export const HeaderAndBodySection = () => (
   <div>
@@ -57,81 +58,20 @@ export const HeaderAndBodySection = () => (
               className="mt-[40.5px]  ml-[5px] rounded-tl-none border-none"
               value="rent"
             >
-              <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-              </div>
+              <RentBody />
             </TabsContent>
           </div>
           <div className="col-span-12 ">
             <TabsContent
               className="mt-[40.5px]  ml-[5px] rounded-tl-none border-none"
               value="buuy"
-            >
-              <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-              </div>
-            </TabsContent>
+            ></TabsContent>
           </div>
           <div className="col-span-12 ">
             <TabsContent
               className="mt-[40.5px]  ml-[5px] rounded-tl-none border-none"
               value="sell"
-            >
-              <div className="grid grid-cols-12 gap-5">
-                <div className="col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-                <div className=" col-span-12 md:col-span-6 lg:col-span-4">
-                  <CardBOUL />
-                </div>
-              </div>
-            </TabsContent>
+            ></TabsContent>
           </div>
         </Tabs>
       </div>

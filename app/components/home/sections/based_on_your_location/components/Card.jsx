@@ -9,13 +9,13 @@ import icon3 from "@/public/images/basedonyour/icon3.png";
 import fav from "@/public/images/basedonyour/fav.png";
 import favs from "@/public/images/basedonyour/fav.png";
 import Image from "next/image";
-export default function CardBOUL({ selected }) {
+export default function CardBOUL({ selected, src }) {
   return (
     <Card
       className={`py-[4px] overflow-auto overflow-visible hover:shadow-xl transition duration-150 ease-out hover:ease-in`}
     >
       <CardBody className="overflow-visible rounded-0 py-0 px-[7px] relative  my-[4px]">
-        <Image className="rounded-0 w-full" src={image1} alt="" />
+        <Image className="rounded-0 w-full" src={src} alt="" />
         <button>
           <Image
             className=" absolute top-3 right-4"
