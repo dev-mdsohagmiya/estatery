@@ -13,7 +13,7 @@ import Link from "next/link";
 import { HeaderFilterDrop } from "@/app/components/rent_buy_sell/components/HeaderFilterDrop";
 import ButtonSearchIcon from "./ButtonSearchIcon";
 
-export default function BuyBody() {
+export default function RentBody() {
   return (
     <div className="grid  md:flex  gap-4  md:justify-between py-5 px-5">
       <div className="col-span-12 md:col-span-3 flex ">
@@ -44,28 +44,22 @@ export default function BuyBody() {
           </div>
         </div>
       </div>
-
-      <div className="hidden  md:block w-[1px] h-[40px] bg-grayline translate-y-7"></div>
-
-      <div className="grid gap-3">
-        <div className="">
-          <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-            When
-          </h1>
-          <div className="-translate-x-[17px]">
-            <RentDate />
+      <div className="col-span-1 hidden  md:block">
+        <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
+      </div>
+      <div className="col-span-12 md:col-span-3 flex ">
+        <div className="flex justify-start	  inline-block ">
+          <div>
+            <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
+              When
+            </h1>
+            <div className="-translate-x-[17px]">
+              <RentDate />
+            </div>
           </div>
         </div>
-        {/* <div>
-          {" "}
-          <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
-            Farm Appartment
-          </h1>
-          <div className="-translate-x-[17px]">
-            <HeaderFilterDrop />
-          </div>
-        </div> */}
       </div>
+
       <div className="col-span-1 hidden  md:block flex justify-center">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
       </div>

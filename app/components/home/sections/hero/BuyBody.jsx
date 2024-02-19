@@ -50,7 +50,6 @@ export default function BuyBody() {
       <div className="col-span-12 md:col-span-3 flex ">
         <div className="flex justify-start	  inline-block ">
           <div>
-            {" "}
             <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
               When
             </h1>
