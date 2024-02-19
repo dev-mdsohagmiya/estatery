@@ -9,7 +9,7 @@ export const BasedOnYourLocation = () => (
     <div className="w-full max-w-[1280px] mx-auto px-4 md:px-8 ">
       <div className="grid grid-cols-12">
         <div className="col-span-12 pb-10">
-          <div className="grid gap-[18px] md:gap-[24px]  pb-[35px] md:pb-[75px]">
+          <div className="grid gap-[5px] md:gap-[24px]  pb-[45px] md:pb-[75px]">
             <div>
               <h2 className="font-bold text-primary text-[30px] md:text-[40px] text-center">
                 Based on your location
