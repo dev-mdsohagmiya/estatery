@@ -7,9 +7,9 @@ export const Tenants = () => (
     <div className="w-full max-w-[1280px] mx-auto px-2 md:px-8 ">
       <div className="grid grid-cols-12">
         <div className="col-span-12 md:col-span-6">
-          <div className="translate-x-6">
+          <div className="px-2 md:px-0 md:translate-x-6">
             <div className="">
-              <Image src={bgphoto} className="-translate-x-6" alt="" />
+              <Image src={bgphoto} className="  md:-translate-x-6" alt="" />
             </div>
           </div>
         </div>
