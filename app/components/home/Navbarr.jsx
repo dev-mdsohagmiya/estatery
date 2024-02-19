@@ -46,16 +46,13 @@ export default function Navbarr() {
   };
 
   const menuItems = [
-    "Profile",
-    "Dashboard",
-    "Activity",
-    "Analytics",
-    "System",
-    "Deployments",
-    "My Settings",
-    "Team Settings",
-    "Help & Feedback",
-    "Log Out",
+    "Home",
+    "Rent",
+    "Buy",
+    "Sell",
+    "Manage Property",
+    "Login",
+    "Signup",
   ];
 
   // onMenuOpenChange={setIsMenuOpen}
@@ -174,25 +171,106 @@ export default function Navbarr() {
             </Button>
           </NavbarItem>
         </NavbarContent>
-        <NavbarMenu>
-          {menuItems.map((item, index) => (
-            <NavbarMenuItem key={`${item}-${index}`}>
-              <Link
-                color={
-                  index === 2
-                    ? "primary"
-                    : index === menuItems.length - 1
-                      ? "danger"
-                      : "foreground"
-                }
-                className="w-full"
-                href="#"
-                size="lg"
+        <NavbarMenu className="pb-[50px]">
+          <NavbarMenuItem className="bg-primary">
+            <hr className="h-[2px] -px-10" />
+            <div className="w-full h-[5px] bg-primary"></div>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <br />
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <NavLink line={true} href={"/"} text={"Home"} />
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <NavLink line={true} href={"/rent"} text={"Rent"} />
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <NavLink line={true} href={"/buy"} text={"Buy"} />
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <NavLink line={true} href={"/sell"} text={"Sell"} />
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Dropdown>
+              <NavbarItem>
+                <DropdownTrigger>
+                  <Button
+                    className="p-0 focus:outline-red  border-none text-graylight "
+                    endContent={icons.chevron}
+                    radius="sm"
+                    variant="light"
+                  >
+                    Manage Property
+                    <BsChevronDown className="mt-[3px] ml-[2px]" />
+                  </Button>
+                </DropdownTrigger>
+              </NavbarItem>
+              <DropdownMenu
+                aria-label="ACME features"
+                className="w-[340px]"
+                itemClasses={{
+                  base: "gap-4",
+                }}
               >
-                {item}
-              </Link>
-            </NavbarMenuItem>
-          ))}
+                <DropdownItem
+                  key="autoscaling"
+                  description="ACME scales apps to meet user demand, automagically, based on load."
+                  startContent={icons.scale}
+                >
+                  Autoscaling
+                </DropdownItem>
+                <DropdownItem
+                  key="usage_metrics"
+                  description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
+                  startContent={icons.activity}
+                >
+                  Usage Metrics
+                </DropdownItem>
+                <DropdownItem
+                  key="production_ready"
+                  description="ACME runs on ACME, join us and others serving requests at web scale."
+                  startContent={icons.flash}
+                >
+                  Production Ready
+                </DropdownItem>
+                <DropdownItem
+                  key="99_uptime"
+                  description="Applications stay on the grid with high availability and high uptime guarantees."
+                  startContent={icons.server}
+                >
+                  +99% Uptime
+                </DropdownItem>
+                <DropdownItem
+                  key="supreme_support"
+                  description="Overcome any challenge with a supporting team ready to respond."
+                  startContent={icons.user}
+                >
+                  +Supreme Support
+                </DropdownItem>
+              </DropdownMenu>
+            </Dropdown>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Button
+              href="/user/dashboard"
+              as={Link}
+              className="text-primary w-full text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7"
+              variant="outline"
+            >
+              Login
+            </Button>
+          </NavbarMenuItem>
+          <NavbarMenuItem>
+            <Button
+              href="/user/dashboard"
+              as={Link}
+              className="bg-primary w-full text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
+              variant="flat"
+            >
+              <span className="py-5">Sign up</span>
+            </Button>
+          </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
     );
