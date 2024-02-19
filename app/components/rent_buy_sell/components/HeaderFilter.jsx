@@ -10,6 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { RentDate } from "../../home/sections/hero/RentDate";
 import { HeaderFilterDrop } from "./HeaderFilterDrop";
+import ButtonSearchIcon from "../../home/sections/hero/ButtonSearchIcon";
 
 export default function HeaderFilter({ hideDate }) {
   return (
@@ -99,7 +100,9 @@ export default function HeaderFilter({ hideDate }) {
       </div>
       <div className="col-span-12 md:col-span-3 flex justify-center items-center">
         <Button className="px-5 py-6 w-full md:w-auto">
-          <span className="text-[16px] font-bold">Browse Properties</span>
+          <span className="text-[16px] font-bold">
+            <ButtonSearchIcon /> Browse Properties
+          </span>
         </Button>
       </div>
     </div>
