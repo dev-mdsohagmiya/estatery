@@ -17,7 +17,7 @@ export default function Hero() {
   const [liked, setLiked] = React.useState(false);
 
   return (
-    <div className="d-flex justify-center mt-[45px] md:mt-[85px] ">
+    <div className="d-flex justify-center mt-[30px] md:mt-[85px] ">
       <div className="w-full max-w-[1280px] mx-auto px-2 md:px-8  ">
         <div>
           <div className="grid grid-cols-12">
