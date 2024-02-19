@@ -88,6 +88,7 @@ export default function Navbarr() {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+            className="sm:hidden"
           />
           <NavbarBrand className="items-center">
             <Link className="items-center relative" href={"/"}>
