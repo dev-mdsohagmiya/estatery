@@ -1,11 +1,32 @@
-"use client"
+"use client";
 import React from "react";
-import {Navbar, NavbarBrand, NavbarContent, NavbarItem, Button,NavbarMenuItem,NavbarMenuToggle,NavbarMenu,Dropdown,DropdownTrigger,DropdownMenu ,DropdownItem } from "@nextui-org/react";
-import {ChevronDown, Lock, Activity, Flash, Server, TagUser, Scale} from "../home/Icons";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  Button,
+  NavbarMenuItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  Dropdown,
+  DropdownTrigger,
+  DropdownMenu,
+  DropdownItem,
+} from "@nextui-org/react";
+import {
+  ChevronDown,
+  Lock,
+  Activity,
+  Flash,
+  Server,
+  TagUser,
+  Scale,
+} from "../home/sections/navbar/Icons";
 
-AcmeLogo
+AcmeLogo;
 import Link from "next/link.js";
-import { AcmeLogo } from "../home/AcmeLogo.jsx";
+import { AcmeLogo } from "../home/sections/navbar/AcmeLogo.jsx";
 
 export default function NavbarDashboard() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -13,7 +34,9 @@ export default function NavbarDashboard() {
     chevron: <ChevronDown fill="currentColor" size={16} />,
     scale: <Scale className="text-warning" fill="currentColor" size={30} />,
     lock: <Lock className="text-success" fill="currentColor" size={30} />,
-    activity: <Activity className="text-secondary" fill="currentColor" size={30} />,
+    activity: (
+      <Activity className="text-secondary" fill="currentColor" size={30} />
+    ),
     flash: <Flash className="text-primary" fill="currentColor" size={30} />,
     server: <Server className="text-success" fill="currentColor" size={30} />,
     user: <TagUser className="text-danger" fill="currentColor" size={30} />,
@@ -32,29 +55,27 @@ export default function NavbarDashboard() {
     "Log Out",
   ];
 
- // onMenuOpenChange={setIsMenuOpen}
-  
-  
+  // onMenuOpenChange={setIsMenuOpen}
 
   return (
-
-<Navbar shouldHideOnScroll maxWidth="xl" className="bg-white shadow-lg" >
+    <Navbar shouldHideOnScroll maxWidth="xl" className="bg-white shadow-lg">
       <NavbarContent>
-   
-       <NavbarMenuToggle
+        <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
         />
         <NavbarBrand className="items-center">
-        <Link className="items-center relative" href={"/"}>
-        <AcmeLogo />
-          <p className="font-bold text-inherit inline-block absolute top-[7px]">AFRILANGUES</p>
-        </Link>
+          <Link className="items-center relative" href={"/"}>
+            <AcmeLogo />
+            <p className="font-bold text-inherit inline-block absolute top-[7px]">
+              AFRILANGUES
+            </p>
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-6" justify="center">
-      <Dropdown>
+        <Dropdown>
           <NavbarItem>
             <DropdownTrigger>
               <Button
@@ -64,7 +85,7 @@ export default function NavbarDashboard() {
                 radius="sm"
                 variant="light"
               >
-                  COURS DE LANGUES AFRICAINES 
+                COURS DE LANGUES AFRICAINES
               </Button>
             </DropdownTrigger>
           </NavbarItem>
@@ -112,23 +133,22 @@ export default function NavbarDashboard() {
             </DropdownItem>
           </DropdownMenu>
         </Dropdown>
-     
+
         <NavbarItem isActive>
           <Link href="/courses" aria-current="page">
-          TARIFS
+            TARIFS
           </Link>
         </NavbarItem>
         <NavbarItem>
           <Link color="foreground" href="#">
-          POUR LES PROS
+            POUR LES PROS
           </Link>
         </NavbarItem>
       </NavbarContent>
       <NavbarContent justify="end">
-   
         <NavbarItem>
           <Button as={Link} color="primary" href="#" variant="flat">
-          JE ME CONNECTE
+            JE ME CONNECTE
           </Button>
         </NavbarItem>
       </NavbarContent>
@@ -137,7 +157,11 @@ export default function NavbarDashboard() {
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
               color={
-                index === 2 ? "primary" : index === menuItems.length - 1 ? "danger" : "foreground"
+                index === 2
+                  ? "primary"
+                  : index === menuItems.length - 1
+                    ? "danger"
+                    : "foreground"
               }
               className="w-full"
               href="#"
@@ -149,6 +173,5 @@ export default function NavbarDashboard() {
         ))}
       </NavbarMenu>
     </Navbar>
-
   );
 }

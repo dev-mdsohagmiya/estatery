@@ -8,9 +8,9 @@ import {
   SelectValue,
 } from "@/components/ui/select";
 import { Button } from "@/components/ui/button";
-import { RentDate } from "../../home/sections/hero/RentDate";
+import { RentDate } from "../../hero/RentDate";
 import { HeaderFilterDrop } from "./HeaderFilterDrop";
-import ButtonSearchIcon from "../../home/sections/hero/ButtonSearchIcon";
+import ButtonSearchIcon from "../../hero/ButtonSearchIcon";
 
 export default function HeaderFilter({ hideDate }) {
   return (

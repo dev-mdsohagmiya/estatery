@@ -27,7 +27,7 @@ import Link from "next/link.js";
 import { usePathname } from "next/navigation.js";
 import { Button } from "@/components/ui/button";
 import { BsChevronDown } from "react-icons/bs";
-import NavLink from "./sections/NavLink.jsx";
+import NavLink from "./NavLink.jsx";
 
 export default function Navbarr() {
   const navRef = useRef();

@@ -1,8 +1,8 @@
 import { Inter, Plus_Jakarta_Sans } from "next/font/google";
 import "./globals.css";
 import Providers from "./providers";
-import Navbarr from "./components/home/Navbarr";
-import Hero from "./components/home/sections/Hero";
+import Navbarr from "./components/home/sections/navbar/Navbarr";
+import Hero from "./components/home/sections/hero/Hero";
 import { Footer } from "./components";
 
 const inter = Inter({ subsets: ["latin"] });

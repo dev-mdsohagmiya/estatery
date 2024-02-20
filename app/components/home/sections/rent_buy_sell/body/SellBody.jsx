@@ -1,4 +1,4 @@
-import GlobalCard from "../components/GlobalCard";
+import GlobalCard from "../../home/sections/rent_buy_sell/components/GlobalCard";
 // ffdfdf
 export default function SellBody() {
   return (

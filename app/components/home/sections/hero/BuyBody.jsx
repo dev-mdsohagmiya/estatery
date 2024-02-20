@@ -10,7 +10,7 @@ import {
 import { Button } from "@/components/ui/button";
 import { RentDate } from "./RentDate";
 import Link from "next/link";
-import { HeaderFilterDrop } from "@/app/components/rent_buy_sell/components/HeaderFilterDrop";
+import { HeaderFilterDrop } from "@/app/components/home/sections/rent_buy_sell/components/HeaderFilterDrop";
 import ButtonSearchIcon from "./ButtonSearchIcon";
 
 export default function BuyBody() {

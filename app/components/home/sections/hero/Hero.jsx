@@ -1,17 +1,8 @@
 "use client";
 import React from "react";
 import { Card, CardBody, Image, Button, Slider } from "@nextui-org/react";
-import { HeartIcon } from "./HeartIcon";
-import { PauseCircleIcon } from "./PauseCircleIcon";
-import { NextIcon } from "./NextIcon";
-import { PreviousIcon } from "./PreviousIcon";
-import { RepeatOneIcon } from "./RepeatOneIcon";
-import { ShuffleIcon } from "./ShuffleIcon";
-import LanguageAvater from "./LanguageAvater";
-
-import left1 from "@/public/images/hero/heroleft1.png";
-import { HeroTabs } from "./hero/HeroTabs";
-import HeroLeftCard from "./hero/HeroLeftCard";
+import { HeroTabs } from "./HeroTabs";
+import HeroLeftCard from "./HeroLeftCard";
 
 export default function Hero() {
   const [liked, setLiked] = React.useState(false);
