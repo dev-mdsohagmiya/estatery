@@ -46,7 +46,7 @@ export function HeroTabs() {
         </TabsTrigger>
       </TabsList>
       <TabsContent
-        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[1180px] px-[5px] md:full rounded-tl-none rounded-tr-none"
+        className="mt-[17.5px] md:mt-[19.5px] w-full lg:w-[240%] xl:w-[280%] px-[5px] md:full rounded-tl-none rounded-tr-none"
         value="rent"
       >
         <Card className="rounded-tl-none rounded-tr-lg rounded-bl-lg rounded-tr-none md:rounded-tr-lg rounded-br-lg">

@@ -14,7 +14,7 @@ import ButtonSearchIcon from "../../home/sections/hero/ButtonSearchIcon";
 
 export default function HeaderFilter({ hideDate }) {
   return (
-    <div className="grid gap-3 md:flex  justify-between py-5 px-5">
+    <div className="grid gap-3 lg:flex  justify-between py-5 px-5">
       <div className="col-span-12 md:col-span-3 flex ">
         <div className="flex content-between	 inline-block">
           <div>
@@ -43,12 +43,12 @@ export default function HeaderFilter({ hideDate }) {
         </div>
       </div>
       <div
-        className={`col-span-1 hidden   ${hideDate ? "hidden" : "md:block"}`}
+        className={`col-span-1 hidden   ${hideDate ? "hidden" : "lg:block"}`}
       >
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
       </div>
       <div
-        className={`col-span-12 md:col-span-3 flex  ${hideDate ? "hidden" : ""}`}
+        className={`col-span-12 lg:col-span-3 flex  ${hideDate ? "hidden" : ""}`}
       >
         <div className="flex justify-start	  inline-block ">
           <div>
@@ -62,10 +62,10 @@ export default function HeaderFilter({ hideDate }) {
           </div>
         </div>
       </div>
-      <div className="col-span-1 hidden  md:block flex justify-center">
-        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
+      <div className="col-span-1 hidden  lg:block flex justify-center">
+        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 lg:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex md:justify-center items-center">
+      <div className="col-span-12 lg:col-span-3 flex lg:justify-center items-center">
         <div className="flex justify-start	  inline-block ">
           <div>
             {" "}
@@ -78,10 +78,10 @@ export default function HeaderFilter({ hideDate }) {
           </div>
         </div>
       </div>
-      <div className="col-span-1 hidden  md:block flex justify-center">
-        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
+      <div className="col-span-1 hidden  lg:block flex justify-center">
+        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 lg:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex md:justify-center items-center">
+      <div className="col-span-12 lg:col-span-3 flex lg:justify-center items-center">
         <div className="flex justify-start	  inline-block ">
           <div>
             {" "}
@@ -95,11 +95,11 @@ export default function HeaderFilter({ hideDate }) {
         </div>
       </div>
 
-      <div className="col-span-1 hidden  md:block flex justify-center">
-        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
+      <div className="col-span-1 hidden  lg:block flex justify-center">
+        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 lg:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex justify-center items-center">
-        <Button className="px-5 py-6 w-full md:w-auto">
+      <div className="col-span-12 lg:col-span-3 flex justify-center items-center">
+        <Button className="px-5 py-6 w-full lg:w-auto">
           <ButtonSearchIcon />{" "}
           <span className="text-[16px] font-bold">Browse Properties</span>
         </Button>

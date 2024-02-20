@@ -15,7 +15,7 @@ import ButtonSearchIcon from "./ButtonSearchIcon";
 
 export default function RentBody() {
   return (
-    <div className="grid  md:flex  gap-4  md:justify-between py-5 px-5">
+    <div className="grid  lg:flex  gap-4  lg:justify-between py-5 px-5">
       <div className="col-span-12 md:col-span-3 flex ">
         <div className="flex content-between	 inline-block">
           <div>
@@ -44,10 +44,10 @@ export default function RentBody() {
           </div>
         </div>
       </div>
-      <div className="col-span-1 hidden  md:block">
+      <div className="col-span-1 hidden  lg:block">
         <div className="w-[1px] h-[40px] bg-grayline translate-y-7"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex ">
+      <div className="col-span-12 lg:col-span-3 flex ">
         <div className="flex justify-start	  inline-block ">
           <div>
             <h1 className="text-[16px] text-graylight  font-medium mb-[0px]">
@@ -60,12 +60,12 @@ export default function RentBody() {
         </div>
       </div>
 
-      <div className="col-span-1 hidden  md:block flex justify-center">
-        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 md:py-auto"></div>
+      <div className="col-span-1 hidden  lg:block flex justify-center">
+        <div className="w-[1px] h-[40px] bg-grayline translate-y-7 py-2 lg:py-auto"></div>
       </div>
-      <div className="col-span-12 md:col-span-3 flex justify-center items-center">
-        <Link className="w-full md:w-auto" href={"#"}>
-          <Button className=" px-5 py-6 w-full w-full md:w-auto cursor-pointer	">
+      <div className="col-span-12 lg:col-span-3 flex justify-center items-center">
+        <Link className="w-full lg:w-auto" href={"#"}>
+          <Button className=" px-5 py-6 w-full w-full lg:w-auto cursor-pointer	">
             <ButtonSearchIcon />{" "}
             <span className="text-[16px] font-bold">Browse Properties</span>
           </Button>

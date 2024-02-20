@@ -21,13 +21,13 @@ export default function Hero() {
       <div className="w-full max-w-[1280px] mx-auto px-5 md:px-8  ">
         <div>
           <div className="grid grid-cols-12">
-            <div className="relative col-span-12 md:col-span-6  lg:col-span-5 ">
+            <div className="relative col-span-12 lg:col-span-6  lg:col-span-5 ">
               <h1 className="text-[35px] md:text[40px] lg:text-[64px] text-primary font-extrabold leading-[45px] md:leading-[70px]">
                 Buy, rent, or sell your property
               </h1>
               <div className="flex mt-[25px] md:mt-[27px] items-start">
                 <Image
-                  className="inline-block w-[67px] md:h-[40px] md:h-auto md:w-auto -translate-y-[12px] sm:translate-y-0"
+                  className="inline-block w-[67px]  lg:h-[40px] lg:h-auto lg:w-auto -translate-y-[12px] lg:translate-y-0"
                   src={"/images/hero/heroleft1.png"}
                   alt=""
                 />
@@ -70,7 +70,7 @@ export default function Hero() {
                 <HeroTabs />
               </div>
             </div>
-            <div className="relative col-span-12 md:col-span-6  lg:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	md:h-[80%]">
+            <div className="relative col-span-12 lg:col-span-6  lg:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	md:h-[80%]">
               <div className="w-full md:w-[220px] mt-[80px] md:mt-[110px] z-10">
                 <HeroLeftCard />
               </div>

@@ -76,9 +76,9 @@ export default function RentBody() {
   ];
   return (
     <div>
-      <div className="grid grid-cols-12 py-[35px] gap-8">
+      <div className="grid grid-cols-12 py-[35px] sm:gap-8">
         {rentData.map((item) => (
-          <div className=" col-span-12 md:col-span6-6 lg:col-span-4">
+          <div className=" mt-6 sm:mt-0 col-span-12 sm:col-span-6 lg:col-span-4">
             <GlobalCard src={item.src} />
           </div>
         ))}
