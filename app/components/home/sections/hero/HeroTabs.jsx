@@ -18,7 +18,7 @@ import ReplaceBody from "./ReplaceBody";
 
 export function HeroTabs() {
   return (
-    <Tabs defaultValue="rent" className="w-full md:w-[400px]">
+    <Tabs defaultValue="rent" className="w-full lg:w-[400px]">
       <TabsList className="grid bg-white w-full grid-cols-4">
         <TabsTrigger
           className="TabsTrigger border-[1px] border-grayline rounded-[0px] py-[12px] rounded-tl-lg text-[16px]  md:text-[18px] font-bold"

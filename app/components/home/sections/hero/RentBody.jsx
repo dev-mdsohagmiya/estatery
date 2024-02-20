@@ -16,10 +16,9 @@ import ButtonSearchIcon from "./ButtonSearchIcon";
 export default function RentBody() {
   return (
     <div className="grid  lg:flex  gap-4  lg:justify-between py-5 px-5">
-      <div className="col-span-12 md:col-span-3 flex ">
+      <div className="col-span-12 lg:col-span-3 flex ">
         <div className="flex content-between	 inline-block">
           <div>
-            {" "}
             <h1 className="text-[16px] text-graylight font-medium mb-[0px]">
               Location
             </h1>
