@@ -21,7 +21,7 @@ export default function Hero() {
       <div className="w-full max-w-[1280px] mx-auto px-5 md:px-8  ">
         <div>
           <div className="grid grid-cols-12">
-            <div className="relative col-span-12 lg:col-span-6  xl:col-span-5 ">
+            <div className="relative col-span-12 lg:col-span-7  xl:col-span-5 ">
               <h1 className="text-[35px] md:text[40px] lg:text-[64px] text-primary font-extrabold leading-[45px] lg:leading-[70px]">
                 Buy, rent, or sell your property
               </h1>
@@ -70,7 +70,7 @@ export default function Hero() {
                 <HeroTabs />
               </div>
             </div>
-            <div className="relative col-span-12 lg:col-span-6  xl:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	md:h-[80%]">
+            <div className="relative col-span-12 lg:col-span-5  xl:col-span-7  grid justify-center bg-no-repeat bg-[url('/images/hero/heroright.png')] 	md:h-[80%]">
               <div className="w-full md:w-[220px] mt-[80px] lg:mt-[110px] z-10">
                 <HeroLeftCard />
               </div>
