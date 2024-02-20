@@ -1,5 +1,5 @@
 import GlobalCard from "../components/GlobalCard";
-// f
+// ffdfdf
 export default function SellBody() {
   return (
     <div>
