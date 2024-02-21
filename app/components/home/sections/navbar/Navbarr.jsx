@@ -88,7 +88,7 @@ export default function Navbarr() {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="md:hidden"
           />
           <NavbarBrand className="items-center">
             <Link className="items-center relative" href={"/"}>
@@ -98,7 +98,7 @@ export default function Navbarr() {
         </NavbarContent>
 
         <NavbarContent
-          className="hidden sm:flex gap-6 text-graylight"
+          className="hidden md:flex gap-6 text-graylight"
           justify="center"
         >
           <NavbarItem>
@@ -172,7 +172,7 @@ export default function Navbarr() {
             </DropdownMenu>
           </Dropdown>
         </NavbarContent>
-        <NavbarContent justify="end">
+        <NavbarContent className="flex" justify="end">
           <NavbarItem>
             <Button
               href="/user/dashboard"
@@ -182,6 +182,8 @@ export default function Navbarr() {
             >
               Login
             </Button>
+          </NavbarItem>
+          <NavbarItem>
             <Button
               href="/user/dashboard"
               as={Link}
