@@ -8,6 +8,7 @@ import icon5 from "@/public/images/property_details/icons/details/icon5.png";
 import icon6 from "@/public/images/property_details/icons/details/icon6.png";
 import arrow from "@/public/images/property_details/icons/details/arrow.png";
 import { Button } from "@/components/ui/button";
+import Body from "./Body";
 export default function DetailsOne() {
   return (
     <div className="grid grid-cols-12 gap-5 lg:gap-7">
@@ -94,7 +95,11 @@ export default function DetailsOne() {
             </div>
           </div>
         </Card>
+        <div className="col-span-7 mt-[16px] pr-7 grid ">
+          <Body />
+        </div>
       </div>
+
       <div className="col-span-12 lg:col-span-3 xl:col-span-4">
         <Card className="w-full p-6">
           <div className="flex gap-[2px]  xl:gap-6">

@@ -26,3 +26,9 @@
   background-color: white;
   box-shadow: none !important;
 }
+
+/* dashboard */
+.DropdownMenuTrigger[data-state="closed"],
+.DropdownMenuTrigger[data-state="open"] {
+  box-shadow: none !important;
+}

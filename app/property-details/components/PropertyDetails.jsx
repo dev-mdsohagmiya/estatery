@@ -1,5 +1,6 @@
 import BreadcrumbSec from "./breadcrumbs/BreadcrumbSec";
 import DetailsOne from "./details_one/DetailsOne";
+import DetailsTwo from "./details_two/DetailsTwo";
 import Header from "./header/Header";
 import PhotoFrame from "./photo-frame/PhotoFrame";
 
@@ -20,6 +21,7 @@ export default function PropertyDetails() {
           <div>
             <DetailsOne />
           </div>
+          <div></div>
         </div>
       </div>
     </div>

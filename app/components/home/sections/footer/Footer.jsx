@@ -11,7 +11,7 @@ import Link from "next/link";
 export const Footer = () => {
   const usepath = usePathname();
   console.log(usepath);
-  if (usepath.includes("user")) {
+  if (usepath.includes("dashboard")) {
     return null;
   } else
     return (

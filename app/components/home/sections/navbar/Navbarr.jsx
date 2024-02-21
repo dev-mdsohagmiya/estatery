@@ -75,7 +75,7 @@ export default function Navbarr() {
     }
   };
 
-  if (usepath.includes("user")) null;
+  if (usepath.includes("dashboard")) null;
   else
     return (
       <Navbar
