@@ -6,25 +6,25 @@ import { UserButton } from "./UserButton";
 import { Notification } from "./Notification";
 import { SearchBox } from "./SearchBox";
 
-function Header() {
+function Header({ mobile }) {
   return (
-    <div className="border-b-1 border-grayline py-5 px-5 md:px-8  ">
+    <div className="md:border-b-1 md:border-grayline md:py-5 ml-5 md:px-8  ">
       <div className="flex  justify-between items-center">
-        <div>
+        <div className={`${mobile ? "hidden" : ""}`}>
           <h2 className="font-bold text-[22px] md:[28px] text-primary">
             Dashboard
           </h2>
         </div>
         <div>
-          <div className="flex gap-5 items-center">
-            <div>
+          <div className="flex gap-3 md:gap-5 items-center">
+            <div className={`${mobile ? "hidden" : ""}`}>
               <SearchBox />
             </div>
             <div>
               <Notification />
             </div>
-            <div>
-              <div className="h-[40px] w-[1px] bg-grayline"></div>
+            <div className={`${mobile ? "hidden" : ""}`}>
+              <div className={`h-[40px] w-[1px] bg-grayline `}></div>
             </div>
             <div>
               <UserButton />

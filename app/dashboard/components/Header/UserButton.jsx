@@ -40,8 +40,8 @@ export function UserButton() {
       <DropdownMenuTrigger className="DropdownMenuTrigger" asChild>
         <Button className="h-[48px]" variant="outline">
           <div className="flex gap-2 items-center">
-            <div>
-              <Image src={user} alt="" />
+            <div className="w-[40px] md:w-[32px] h-[32px]">
+              <Image className="h-[100%] w-[100%]" src={user} alt="" />
             </div>
             <div>
               <span className="font-medium text-[14px] md:text-[16px] text-primary">
@@ -54,7 +54,7 @@ export function UserButton() {
           </div>
         </Button>
       </DropdownMenuTrigger>
-      <DropdownMenuContent className="w-56 -translate-x-8">
+      <DropdownMenuContent className="w-56 -translate-x-6 md:-translate-x-8">
         <DropdownMenuLabel>My Account</DropdownMenuLabel>
         <DropdownMenuSeparator />
         <DropdownMenuGroup>

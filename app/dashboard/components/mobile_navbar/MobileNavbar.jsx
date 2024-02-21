@@ -21,15 +21,16 @@ import {
   Server,
   TagUser,
   Scale,
-} from "./Icons.jsx";
-import { AcmeLogo } from "./AcmeLogo.jsx";
+} from "@/app/components/home/sections/navbar/Icons.jsx";
+
 import Link from "next/link.js";
 import { usePathname } from "next/navigation.js";
 import { Button } from "@/components/ui/button";
 import { BsChevronDown } from "react-icons/bs";
-import NavLink from "./NavLink.jsx";
+import NavLink from "../manu/NavLink.jsx";
+import Header from "../Header/Header.jsx";
 
-export default function Navbarr() {
+export default function MobileNavbar() {
   const navRef = useRef();
 
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -75,7 +76,7 @@ export default function Navbarr() {
     }
   };
 
-  if (usepath.includes("dashboard")) null;
+  if (usepath.includes("dashboardfff")) null;
   else
     return (
       <Navbar
@@ -91,9 +92,7 @@ export default function Navbarr() {
             className="sm:hidden"
           />
           <NavbarBrand className="items-center">
-            <Link className="items-center relative" href={"/"}>
-              <AcmeLogo />
-            </Link>
+            <Link className="items-center relative" href={"/"}></Link>
           </NavbarBrand>
         </NavbarContent>
 
@@ -172,24 +171,9 @@ export default function Navbarr() {
             </DropdownMenu>
           </Dropdown>
         </NavbarContent>
-        <NavbarContent justify="end">
-          <NavbarItem>
-            <Button
-              href="/user/dashboard"
-              as={Link}
-              className="text-primary text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7 hidden sm:block"
-              variant="outline"
-            >
-              Login
-            </Button>
-            <Button
-              href="/user/dashboard"
-              as={Link}
-              className="bg-primary text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
-              variant="flat"
-            >
-              <span className="py-5">Sign up</span>
-            </Button>
+        <NavbarContent className="w-full flex justify-end" justify="end">
+          <NavbarItem className="flex justify-end w-full">
+            <Header mobile={true} />
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu className={`pb-[50px] `}>
