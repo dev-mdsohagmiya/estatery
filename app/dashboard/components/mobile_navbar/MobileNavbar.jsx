@@ -89,7 +89,7 @@ export default function MobileNavbar() {
         <NavbarContent>
           <NavbarMenuToggle
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            className="sm:hidden"
+            className="md:hidden"
           />
           <NavbarBrand className="items-center">
             <Link className="items-center relative" href={"/"}></Link>
@@ -97,7 +97,7 @@ export default function MobileNavbar() {
         </NavbarContent>
 
         <NavbarContent
-          className="hidden sm:flex gap-6 text-graylight"
+          className="hidden md:flex gap-6 text-graylight"
           justify="center"
         >
           <NavbarItem>

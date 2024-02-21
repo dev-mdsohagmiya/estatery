@@ -46,7 +46,7 @@ export function Notification() {
       <DropdownMenuTrigger className="DropdownMenuTrigger" asChild>
         <Button
           onClick={() => handleNotification()}
-          className="shadow-none w-[40x] h-[40px] rounded bg-[#f7f7fd] relative"
+          className="shadow-none w-[40x] h-[46px] md:h-[40px] rounded bg-[#f7f7fd] relative"
           variant="outline"
         >
           <RiNotification2Line className="text-graylight text-[25px]" />
