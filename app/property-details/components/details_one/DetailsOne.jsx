@@ -10,7 +10,7 @@ import arrow from "@/public/images/property_details/icons/details/arrow.png";
 import { Button } from "@/components/ui/button";
 export default function DetailsOne() {
   return (
-    <div className="grid grid-cols-12 gap-7">
+    <div className="grid grid-cols-12 gap-5 lg:gap-7">
       <div className="col-span-12 lg:col-span-9 xl:col-span-8 ">
         <Card className="p-5">
           <div className="w-full md:grid grid gap-2 md:gap-3 lg:flex justify-between grid-cols-12">
