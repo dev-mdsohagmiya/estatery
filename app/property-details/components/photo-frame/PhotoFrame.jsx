@@ -31,7 +31,7 @@ export default function PhotoFrame() {
             src={headerImg}
           />
         </div>
-        <div className="grid grid-cols-12 gap-3 md:gap-7 py-3 md:py-7">
+        <div className="grid grid-cols-12 gap-3 md:gap-7 pt-3 md:pt-7">
           {data.map((item, index) => (
             <div key={index} className="col-span-3 relative">
               <button className="w-full" onClick={() => handleHeaderImg(item)}>
