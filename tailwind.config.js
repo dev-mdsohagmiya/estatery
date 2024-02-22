@@ -1,15 +1,14 @@
-
-import {nextui} from "@nextui-org/react";
+import { nextui } from "@nextui-org/react";
 
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   darkMode: ["class"],
   content: [
-    './pages/**/*.{js,jsx}',
-    './components/**/*.{js,jsx}',
-    './app/**/*.{js,jsx}',
-    './src/**/*.{js,jsx}',
-    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}"
+    "./pages/**/*.{js,jsx}",
+    "./components/**/*.{js,jsx}",
+    "./app/**/*.{js,jsx}",
+    "./src/**/*.{js,jsx}",
+    "./node_modules/@nextui-org/theme/dist/**/*.{js,ts,jsx,tsx}",
   ],
   prefix: "",
   theme: {
@@ -20,21 +19,21 @@ module.exports = {
         "2xl": "1400px",
       },
       colors: {
-        "graylight":"#8B8C93",
-        'blue': '#1fb6ff',
-        'purple': '#7e5bef',
-        'pink': '#ff49db',
-        'orange': '#ff7849',
-        'green': '#13ce66',
-        'yellow': '#ffc82c',
-        'gray-dark': '#273444',
-        'gray': '#F8F8F8',
-        'gray-light': '#d3dce6',
-        "white":"#ffffff",
-        primary:"#000929",
-        grayline:"#DADAE3"
-
-      }
+        graylight: "#8B8C93",
+        blue: "#1fb6ff",
+        purple: "#7e5bef",
+        pink: "#ff49db",
+        orange: "#ff7849",
+        green: "#13ce66",
+        yellow: "#ffc82c",
+        "gray-dark": "#273444",
+        gray: "#F8F8F8",
+        "gray-light": "#d3dce6",
+        white: "#ffffff",
+        primary: "#000929",
+        grayline: "#DADAE3",
+        dark: "#4d5369",
+      },
     },
     extend: {
       keyframes: {
@@ -53,8 +52,9 @@ module.exports = {
       },
     },
   },
-  plugins: [require("tailwindcss-animate"),nextui(
-    {
+  plugins: [
+    require("tailwindcss-animate"),
+    nextui({
       themes: {
         light: {
           layout: {},
@@ -65,26 +65,24 @@ module.exports = {
             red: "#E50045",
             green: "#70A75C;",
             blue: "#1171FF",
-            gray:"#F8F8F8",
-        "graylight":"#8B8C93",
-        grayline:"#DADAE3"
-
+            gray: "#F8F8F8",
+            graylight: "#8B8C93",
+            grayline: "#DADAE3",
+            dark: "#4d5369",
           },
           backgroundColor: {
             primary: "#000929",
             white: "#ffffff",
-            dark: "#141E2E",
+            dark: "#4d5369",
             secondary: "#37404D",
             red: "#E50045",
             darkLight: "#1B273A",
             darkLighter: "#243042",
             green: "#70A75C;",
             blue: "#1171FF",
-            gray:"#ececeb",
-           "graylight":"#8B8C93",
-        grayline:"#DADAE3"
-
-
+            gray: "#ececeb",
+            graylight: "#8B8C93",
+            grayline: "#DADAE3",
           },
         },
         // dark: {
@@ -109,7 +107,7 @@ module.exports = {
         //   },
         // },
       },
-    },
-  )],
+    }),
+  ],
   darkMode: "class",
-}
+};

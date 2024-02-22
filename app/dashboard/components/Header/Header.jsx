@@ -8,7 +8,7 @@ import { SearchBox } from "./SearchBox";
 
 function Header({ mobile }) {
   return (
-    <div className="md:border-b-1 md:border-grayline md:py-5 pl-5 md:pl-5 md:px-8  ">
+    <div className="md:border-b-1 md:border-grayline md:py-5 pl-5 md:pl-5 md:px-8">
       <div className="flex  justify-between items-center">
         <div className={`${mobile ? "hidden" : ""}`}>
           <h2 className="font-bold text-[22px] md:[28px] text-primary">
