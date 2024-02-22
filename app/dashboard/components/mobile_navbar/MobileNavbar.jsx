@@ -29,7 +29,14 @@ import { Button } from "@/components/ui/button";
 import { BsChevronDown } from "react-icons/bs";
 import NavLink from "../manu/NavLink.jsx";
 import Header from "../Header/Header.jsx";
-
+import logoback from "@/public/logoblack.png";
+import icon1 from "@/public/dashboard/manu/icon1.png";
+import icon2 from "@/public/dashboard/manu/icon2.png";
+import icon3 from "@/public/dashboard/manu/icon3.png";
+import icon4 from "@/public/dashboard/manu/icon4.png";
+import icon5 from "@/public/dashboard/manu/icon5.png";
+import logout from "@/public/dashboard/manu/logout.png";
+import Image from "next/image.js";
 export default function MobileNavbar() {
   const navRef = useRef();
 
@@ -101,17 +108,21 @@ export default function MobileNavbar() {
           justify="center"
         >
           <NavbarItem>
-            <NavLink href={"/"} text={"Home"} />
+            <NavLink href={"/"} src={icon1} text={"Home"} />
           </NavbarItem>
           <NavbarItem>
-            <NavLink href={"/rent"} text={"Rent"} />
+            <NavLink href={"/rent"} text={"Customer"} />
           </NavbarItem>
           <NavbarItem>
-            <NavLink href={"/buy"} text={"Buy"} />
+            <NavLink href={"/buy"} text={"Property"} />
           </NavbarItem>
           <NavbarItem>
-            <NavLink href={"/sell"} text={"Sell"} />
+            <NavLink href={"/sell"} text={"Reports"} />
           </NavbarItem>
+          <NavbarItem>
+            <NavLink href={"/sell"} text={"Settings"} />
+          </NavbarItem>
+
           <Dropdown>
             <NavbarItem>
               <DropdownTrigger>
@@ -177,106 +188,61 @@ export default function MobileNavbar() {
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu className={`pb-[50px] `}>
-          <NavbarMenuItem className="bg-primary">
-            <hr className="h-[2px] -px-10" />
+          <NavbarMenuItem className="bg-primary h-2 w-full -px-8">
+            <hr className="h-[2px] -px-10 bg-grayline w-full" />
             <div className="w-full h-[5px] bg-primary"></div>
           </NavbarMenuItem>
-          <NavbarMenuItem>
-            <br />
+
+          <NavbarMenuItem className="py-5">
+            <Image src={logoback} alt="" />
           </NavbarMenuItem>
           <NavbarMenuItem onClick={() => handleHideManu()}>
-            <NavLink line={true} href={"/"} text={"Home"} />
+            <NavLink
+              line={true}
+              href={"/dashboard"}
+              src={icon1}
+              text={"Dashboard"}
+            />
           </NavbarMenuItem>
           <NavbarMenuItem onClick={() => handleHideManu()}>
-            <NavLink line={true} href={"/rent"} text={"Rent"} />
+            <NavLink
+              line={true}
+              href={"/customer"}
+              src={icon2}
+              text={"Customer"}
+            />
           </NavbarMenuItem>
           <NavbarMenuItem onClick={() => handleHideManu()}>
-            <NavLink line={true} href={"/buy"} text={"Buy"} />
+            <NavLink
+              line={true}
+              src={icon3}
+              href={"/property"}
+              text={"Property"}
+            />
           </NavbarMenuItem>
           <NavbarMenuItem onClick={() => handleHideManu()}>
-            <NavLink line={true} href={"/sell"} text={"Sell"} />
+            <NavLink
+              line={true}
+              src={icon4}
+              href={"/reports"}
+              text={"Reports"}
+            />
           </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Dropdown>
-              <NavbarItem>
-                <DropdownTrigger>
-                  <Button
-                    className="p-0 focus:outline-red  border-none text-graylight "
-                    endContent={icons.chevron}
-                    radius="sm"
-                    variant="light"
-                  >
-                    Manage Property
-                    <BsChevronDown className="mt-[3px] ml-[2px]" />
-                  </Button>
-                </DropdownTrigger>
-              </NavbarItem>
-              <DropdownMenu
-                aria-label="ACME features"
-                className="w-[340px]"
-                itemClasses={{
-                  base: "gap-4",
-                }}
-              >
-                <DropdownItem
-                  key="autoscaling"
-                  description="ACME scales apps to meet user demand, automagically, based on load."
-                  startContent={icons.scale}
-                >
-                  Autoscaling
-                </DropdownItem>
-                <DropdownItem
-                  key="usage_metrics"
-                  description="Real-time metrics to debug issues. Slow query added? We’ll show you exactly where."
-                  startContent={icons.activity}
-                >
-                  Usage Metrics
-                </DropdownItem>
-                <DropdownItem
-                  key="production_ready"
-                  description="ACME runs on ACME, join us and others serving requests at web scale."
-                  startContent={icons.flash}
-                >
-                  Production Ready
-                </DropdownItem>
-                <DropdownItem
-                  key="99_uptime"
-                  description="Applications stay on the grid with high availability and high uptime guarantees."
-                  startContent={icons.server}
-                >
-                  +99% Uptime
-                </DropdownItem>
-                <DropdownItem
-                  key="supreme_support"
-                  description="Overcome any challenge with a supporting team ready to respond."
-                  startContent={icons.user}
-                >
-                  +Supreme Support
-                </DropdownItem>
-              </DropdownMenu>
-            </Dropdown>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
+            <NavLink
+              src={icon5}
+              line={true}
+              href={"/settings"}
+              text={"Settings"}
+            />
           </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Button
-              onClick={() => handleHideManu()}
-              href="/user/dashboard"
-              as={Link}
-              className="text-primary w-full text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7"
-              variant="outline"
-            >
-              Login
-            </Button>
-          </NavbarMenuItem>
-          <NavbarMenuItem>
-            <Button
-              onClick={() => handleHideManu()}
-              href="/user/dashboard"
-              as={Link}
-              className="bg-primary w-full text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
-              variant="flat"
-            >
-              <span className="py-5">Sign up</span>
-            </Button>
+          <NavbarMenuItem onClick={() => handleHideManu()}>
+            <NavLink
+              line={true}
+              href={"/logout"}
+              text={"Logout"}
+              src={logout}
+            />
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>

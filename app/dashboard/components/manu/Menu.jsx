@@ -12,7 +12,7 @@ import NavLink from "./NavLink";
 
 function Manu() {
   return (
-    <div className="border-r-1 grid items-baseline  border-grayline h-[100vh] py-5">
+    <div className=" grid items-baseline  border-grayline h-[100vh] py-5">
       <div className="grid ">
         <div className=" px-5 md:px-8 ">
           <Link href={"/dashboard"}>
