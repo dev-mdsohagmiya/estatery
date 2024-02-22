@@ -21,7 +21,7 @@ function FirstCard() {
         <div className="grid grid-cols-12  2xl:grid-cols-10 gap-3 md:gap-5">
           {data.map((item) => (
             <div className="col-span-12 md:col-span-6 lg:col-span-4  2xl:col-span-2">
-              <Card className="w-full flex items-center gap-5 p-4 border-1 border-grayline shadow-none">
+              <Card className="w-full flex items-center gap-5 p-4 border-1 border-grayline shadow-none rounded-md">
                 <div className="w-[56px] h-[56px]">
                   <Image className="w-full h-full" alt="" src={item.src} />
                 </div>
