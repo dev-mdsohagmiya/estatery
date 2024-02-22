@@ -82,7 +82,7 @@ function Activity() {
         <div>
           <h2 className="text-[14px] text-[16px] font-bold text-primary  relative inline-block px-1">
             All
-            <div className="h-[2px] w-full bg-primary absolute top-[186%]"></div>
+            <div className="h-[2px] w-full bg-primary absolute top-9 md:top-[186%]"></div>
           </h2>
         </div>
         <div className="h-[2px] w-full bg-grayline"></div>
