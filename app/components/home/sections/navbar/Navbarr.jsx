@@ -75,7 +75,7 @@ export default function Navbarr() {
     }
   };
 
-  if (usepath.includes("dashboard")) null;
+  if (usepath.includes("dashboard") || usepath.includes("add-property")) null;
   else
     return (
       <Navbar

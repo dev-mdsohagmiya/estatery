@@ -11,7 +11,7 @@ import Link from "next/link";
 export const Footer = () => {
   const usepath = usePathname();
   console.log(usepath);
-  if (usepath.includes("dashboard")) {
+  if (usepath.includes("dashboard") || usepath.includes("add-property")) {
     return null;
   } else
     return (
