@@ -5,8 +5,8 @@ export default function Login() {
   return (
     <div className=" w-full max-w-[1280px] mx-auto px-5 md:px-8  h-[100vh] ">
       <div className="grid grid-cols-12 h-[100%] ">
-        <div className="col-span-12 md:col-span-6 lg:col-span-5 md:border-r-1 md:border-grayline px-10 h-[100%] grid items-center justify-center">
-          <div className=" max-w-[333px] pb-[60px] md:pb-[50px]">
+        <div className="col-span-12 md:col-span-6 lg:col-span-5 md:border-r-1 md:border-grayline md:px-10 h-[100%] grid items-center justify-center">
+          <div className=" md:max-w-[333px] pb-[60px] md:pb-[50px]">
             <RegisterPage />
           </div>
         </div>
