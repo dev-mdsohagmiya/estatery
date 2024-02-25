@@ -134,7 +134,7 @@ function LoginForm() {
             href={"/auth/login"}
             className="text-[13px] md:text-[14px] font-medium text-primary"
           >
-            Login
+            Sign up
           </Link>
         </div>
       </div>

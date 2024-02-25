@@ -158,7 +158,7 @@ function RegisterForm() {
       <div>
         <div className="flex gap-1 justify-center mt-1">
           <h2 className="text-[13px] md:text-[14px] font-normal text-graylight">
-            Don’t have an account ?
+            Already have an account ?
           </h2>
           <Link
             href={"/auth/login"}
