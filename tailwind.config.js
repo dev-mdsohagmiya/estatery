@@ -33,6 +33,7 @@ module.exports = {
         primary: "#000929",
         grayline: "#DADAE3",
         dark: "#4d5369",
+        warning: "#df2626",
       },
     },
     extend: {
@@ -69,6 +70,7 @@ module.exports = {
             graylight: "#8B8C93",
             grayline: "#DADAE3",
             dark: "#4d5369",
+            warning: "#df2626",
           },
           backgroundColor: {
             primary: "#000929",
@@ -83,6 +85,7 @@ module.exports = {
             gray: "#ececeb",
             graylight: "#8B8C93",
             grayline: "#DADAE3",
+            warning: "#df2626",
           },
         },
         // dark: {

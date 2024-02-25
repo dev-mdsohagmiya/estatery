@@ -2,15 +2,13 @@ import Image from "next/image";
 import LoginForm from "./LoginForm";
 import logo from "@/public/logoblack.png";
 import Link from "next/link";
-import FormixPage from "./FormixPage";
+
 function LoginPage() {
   return (
     <div className="h-[525px]">
-      <FormixPage />
       <div>
         <div className=" w-[134px] h-[40px] ">
           <Link href={"/"}>
-            {" "}
             <Image className="select-none" src={logo} alt="" />
           </Link>
         </div>
