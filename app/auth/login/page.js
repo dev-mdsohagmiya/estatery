@@ -1,5 +1,5 @@
+import LoginPage from "@/app/components/auth/login/components/LoginPage";
 import HeroLeftCard from "@/app/components/home/sections/hero/HeroLeftCard";
-import LoginPage from "./components/LoginPage";
 
 export default function Login() {
   return (
