@@ -131,7 +131,7 @@ function LoginForm() {
             Don’t have an account ?
           </h2>
           <Link
-            href={"/auth/login"}
+            href={"/auth/register"}
             className="text-[13px] md:text-[14px] font-medium text-primary"
           >
             Sign up
