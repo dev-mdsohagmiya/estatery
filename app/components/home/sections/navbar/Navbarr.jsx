@@ -179,24 +179,26 @@ export default function Navbarr() {
         </NavbarContent>
         <NavbarContent className="flex" justify="end">
           <NavbarItem>
-            <Button
-              href="/user/dashboard"
-              as={Link}
-              className="text-primary text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7 hidden sm:block"
-              variant="outline"
-            >
-              Login
-            </Button>
+            <Link href="/auth/login">
+              <Button
+                as={Link}
+                className="text-primary text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7 hidden sm:block"
+                variant="outline"
+              >
+                Login
+              </Button>
+            </Link>
           </NavbarItem>
           <NavbarItem>
-            <Button
-              href="/user/dashboard"
-              as={Link}
-              className="bg-primary text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
-              variant="flat"
-            >
-              <span className="py-5">Sign up</span>
-            </Button>
+            <Link href="/auth/register">
+              <Button
+                as={Link}
+                className="bg-primary text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
+                variant="flat"
+              >
+                <span className="py-5">Sign up</span>
+              </Button>
+            </Link>
           </NavbarItem>
         </NavbarContent>
         <NavbarMenu className={`pb-[50px] `}>
@@ -280,26 +282,28 @@ export default function Navbarr() {
             </Dropdown>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Button
-              onClick={() => handleHideManu()}
-              href="/user/dashboard"
-              as={Link}
-              className="text-primary w-full text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7"
-              variant="outline"
-            >
-              Login
-            </Button>
+            <Link href="/auth/login">
+              <Button
+                onClick={() => handleHideManu()}
+                as={Link}
+                className="text-primary w-full text-[16px] h-[48px] rounded-[8px] font-normal mr-[16px] px-7"
+                variant="outline"
+              >
+                Login
+              </Button>
+            </Link>
           </NavbarMenuItem>
           <NavbarMenuItem>
-            <Button
-              onClick={() => handleHideManu()}
-              href="/user/dashboard"
-              as={Link}
-              className="bg-primary w-full text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
-              variant="flat"
-            >
-              <span className="py-5">Sign up</span>
-            </Button>
+            <Link href="/auth/register">
+              <Button
+                onClick={() => handleHideManu()}
+                as={Link}
+                className="bg-primary w-full text-white text-[16px] h-[48px] rounded-[8px] font-normal px-7"
+                variant="flat"
+              >
+                <span className="py-5">Sign up</span>
+              </Button>
+            </Link>
           </NavbarMenuItem>
         </NavbarMenu>
       </Navbar>
