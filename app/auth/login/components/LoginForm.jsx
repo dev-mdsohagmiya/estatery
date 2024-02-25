@@ -7,8 +7,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { useFormik } from "formik";
 import * as yup from "yup";
+import eye from "@/public/auth/eye.png";
+import eye2 from "@/public/auth/eye2.png";
+import { useState } from "react";
 
 function LoginForm() {
+  const [eyeIcon, setEyeIcon] = useState(eye);
+  const [passwordBoxType, setPasswordBoxType] = useState("password");
   const formik = useFormik({
     initialValues: {
       email: "",
@@ -28,6 +33,17 @@ function LoginForm() {
   });
 
   console.log(formik.errors);
+
+  const handlePasswordWatch = () => {
+    console.log("");
+    if (passwordBoxType === "password") {
+      setPasswordBoxType("text");
+      setEyeIcon(eye2);
+    } else {
+      setPasswordBoxType("password");
+      setEyeIcon(eye);
+    }
+  };
   return (
     <div className="gap-2 grid">
       <form>
@@ -59,7 +75,7 @@ function LoginForm() {
             )}
           </div>
         </div>
-        <div>
+        <div className="relative">
           <label className="text-[13px] md:text-[14px] text-primary font-medium ">
             Password
           </label>
@@ -75,9 +91,21 @@ function LoginForm() {
               formik.errors?.password &&
               "border-warning border-1"
             } `}
-            type="password"
+            type={passwordBoxType}
             placeholder="Password"
           />
+          <div className="absolute top-9 right-3">
+            <div
+              className="h-[24px] w-[24px] cursor-pointer"
+              onClick={handlePasswordWatch}
+            >
+              <Image
+                alt=""
+                className="w-full h-full select-none"
+                src={eyeIcon}
+              />
+            </div>
+          </div>
           <div className="">
             {formik.touched.password && (
               <small className="text-[12px] font-normal text-warning">
