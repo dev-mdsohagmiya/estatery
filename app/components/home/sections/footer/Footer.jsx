@@ -11,7 +11,11 @@ import Link from "next/link";
 export const Footer = () => {
   const usepath = usePathname();
   console.log(usepath);
-  if (usepath.includes("dashboard") || usepath.includes("add-property")) {
+  if (
+    usepath.includes("dashboard") ||
+    usepath.includes("add-property") ||
+    usepath.includes("auth")
+  ) {
     return null;
   } else
     return (
