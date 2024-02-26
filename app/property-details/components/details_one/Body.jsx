@@ -64,6 +64,17 @@ export default function Body() {
         <div className="py-3">
           <div className="h-[2px] w-full bg-grayline"></div>
         </div>
+        <div>
+          <p className="text-[13px] md:text-[14px] text-graylight font-medium">
+            You agree to Estatery's Terms of Use & Privacy Policy. By choosing
+            to contact a property, you also agree that Estatery Group,
+            landlords, and property managers may call or text you about any
+            inquiries you submit through our services, which may involve use of
+            automated means and prerecorded/artificial voices. You don't need to
+            consent as a condition of renting any property, or buying any other
+            goods or services. Message/data rates may apply.
+          </p>
+        </div>
       </div>
     </div>
   );

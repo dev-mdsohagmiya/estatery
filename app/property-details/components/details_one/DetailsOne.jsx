@@ -12,6 +12,31 @@ import Body from "./Body";
 export default function DetailsOne() {
   return (
     <div className="grid grid-cols-12 gap-5 lg:gap-7">
+      <div className="col-span-12 block md:hidden">
+        <div className="col-span-12 lg:col-span-3 xl:col-span-4 ">
+          <Card className="w-full p-6">
+            <div className="flex gap-[2px]  xl:gap-6">
+              <div>
+                <Image src={icon6} alt="" />
+              </div>
+              <div>
+                <div className="text-graylight font-medium ">Price</div>
+                <div className="text-primary font-[800] text-[20px] md:text-[24px] lg:-translate-x-[25px] xl:-translate-x-0">
+                  $582,87.00
+                </div>
+              </div>
+            </div>
+            <div className="mt-3 xl:mt-8">
+              <Button className="lg:h-[50px] xl:h-[56px] w-full px-1 rounded-8px ">
+                <span className="text-white font-bold text-[14px] md:text-[16px] text-white">
+                  Buy
+                </span>{" "}
+                <Image className="ml-2" src={arrow} alt="" />
+              </Button>
+            </div>
+          </Card>
+        </div>
+      </div>
       <div className="col-span-12 lg:col-span-9 xl:col-span-8 ">
         <Card className="p-5">
           <div className="w-full md:grid grid gap-2 md:gap-3 lg:flex justify-between grid-cols-12">
@@ -100,7 +125,7 @@ export default function DetailsOne() {
         </div>
       </div>
 
-      <div className="col-span-12 lg:col-span-3 xl:col-span-4">
+      <div className="col-span-12 lg:col-span-3 xl:col-span-4 hidden md:block">
         <Card className="w-full p-6">
           <div className="flex gap-[2px]  xl:gap-6">
             <div>
