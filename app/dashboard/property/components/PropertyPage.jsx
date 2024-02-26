@@ -21,6 +21,7 @@ import img5 from "@/public/dashboard/property/img5.png";
 import img6 from "@/public/dashboard/property/img6.png";
 import Image from "next/image";
 import { PaginationSBR } from "@/app/components/home/sections/rent_buy_sell/Pagination";
+import { FilterBtn } from "./FilterBtn";
 
 const PropertyPage = () => {
   const properties = [
@@ -103,15 +104,8 @@ const PropertyPage = () => {
       <div className="">
         {/* filtering and add post */}
         <div className="md:flex justify-between">
-          <div className="p-3 bg-white rounded-[4px] text-center">
-            <select className="p-2 focus:outline-none text-[#000929] font-bold">
-              <option disabled selected>
-                Selecting All
-              </option>
-              <option>one</option>
-              <option>Owo</option>
-              <option>Three</option>
-            </select>
+          <div className=" text-center">
+            <FilterBtn />
           </div>
 
           <div className="flex items-center gap-4 justify-between">
@@ -156,7 +150,7 @@ const PropertyPage = () => {
             >
               <div className="relative">
                 <div className="">
-                  <div className="h-[200px] sm:[h-[290px]] xl:h-[270px] w-full">
+                  <div className="h-[200px] sm:[h-[290px]] xl:h-[240px] w-full">
                     <Image
                       src={item.image}
                       className="rounded-md w-full h-full select-none"
