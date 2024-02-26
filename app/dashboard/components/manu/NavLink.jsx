@@ -10,7 +10,7 @@ export default function NavLink({ text, href, line, src }) {
   return (
     <Link href={href}>
       <Button
-        className={`border-none h-[52px] w-full  text-start flex justify-start shadow-none ${isActive ? "bg-[#f2f3f4] hover:bg-[#f2f3f4]" : ""}`}
+        className={`border-none h-[52px]  w-full  text-start flex justify-start shadow-none ${isActive ? "bg-[#f2f3f4] hover:bg-[#f2f3f4]" : ""}`}
         variant="outline"
       >
         <div className="flex gap-2 items-center justify-start">

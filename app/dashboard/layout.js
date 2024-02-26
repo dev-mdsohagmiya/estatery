@@ -9,7 +9,7 @@ export default function RootLayout({ children }) {
         <div className="hidden md:grid md:grid-cols-12 lg:grid-cols-9 xl:grid-cols-12">
           <div className="md:col-span-3 lg:col-span-2 xl:col-span-2 ">
             <div className="relative">
-              <div className="fixed  w-[28%] lg:w-[25.5%] xl:w-[16.5%] pr-10">
+              <div className="fixed  w-[28%] lg:w-[25.5%] xl:w-[16.5%] 2xl:w-[17.5%] pr-10">
                 <Manu />
               </div>
             </div>
