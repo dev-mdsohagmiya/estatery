@@ -13,7 +13,7 @@ import {
   PopoverTrigger,
 } from "@/components/ui/popover";
 
-import dropdownIcon from "@/public/dashboard/reports/dropdownIcon.png";
+import dropdownIcon from "@/public/dashboard/reports/dropdownicon.png";
 import Image from "next/image";
 
 export function DatePicker({ text }) {
