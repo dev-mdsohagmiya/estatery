@@ -54,22 +54,12 @@ function Manu() {
             <NavLink text={"Reports"} href={"/dashboard/reports"} src={icon4} />
           </div>
 
-          <div className="px-2 md:px-5 ">
-            <Button
-              className="border-none h-[52px] w-full text-start flex justify-start shadow-none"
-              variant="outline"
-            >
-              <div className="flex gap-2 items-center justify-start">
-                <div className="w-[24px] h-[24px]">
-                  <Image className="w-[100%] h-[100%]" src={icon5} alt="" />
-                </div>
-                <div>
-                  <span className="text-graylight text-[14px] md:text-[16px]">
-                    Settings
-                  </span>
-                </div>
-              </div>
-            </Button>
+          <div className="pt-1 px-2 md:px-5 w-full">
+            <NavLink
+              text={"Settings"}
+              href={"/dashboard/setting"}
+              src={icon5}
+            />
           </div>
         </div>
         <div className="h-[100%] grid items-end gap-0 m-0 px-2 md:px-5 ">
