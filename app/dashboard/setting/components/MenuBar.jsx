@@ -8,18 +8,6 @@ import FormProfile from "./FormProfile";
 function MenuBar() {
   return (
     <div className="pt-4">
-      <div className="flex gap-3">
-        <div>
-          <NavLink href={"/dashboard/setting"} text={"Profile"} />
-        </div>
-        <div>
-          <NavLink href={"/dashboard/my_acount"} text={"My Acount"} />
-        </div>
-        <div>
-          <h2></h2>
-        </div>
-      </div>
-      <div className="w-full h-[1px] bg-grayline my-3"></div>
       <div className="grid grid-cols-12 gap-3 md:gap-5 lg:h-[594px] mt-4 md:mt-6">
         <div className="col-span-12 lg:col-span-5 xl:col-span-4 2xl:col-span-3 h-full ">
           <div className="rounded-[12px] bg-white border-[1px] border-grayline py-3 px-10  md:py-5 h-full">
