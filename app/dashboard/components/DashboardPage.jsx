@@ -8,9 +8,7 @@ export default function DashbaordPage() {
   return (
     <div>
       <div className="hidden md:block">
-        <div>
-          <Header />
-        </div>
+        <div>{/* <Header /> */}</div>
       </div>
 
       <div>

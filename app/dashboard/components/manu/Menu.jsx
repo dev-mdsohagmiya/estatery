@@ -23,23 +23,27 @@ function Manu() {
           <div className="pt-6 px-2 md:px-5 w-full">
             <NavLink text={"Dashboard"} href={"/dashboard"} src={icon1} />
           </div>
-          <div className="px-2 md:px-5 ">
-            <Button
+
+          {/* <Button
               className="border-none h-[52px] w-full text-start flex justify-start shadow-none"
               variant="outline"
             >
-              <div className="flex gap-2 items-center justify-start">
-                <div className="w-[24px] h-[24px]">
-                  <Image className="w-[100%] h-[100%]" src={icon2} alt="" />
-                </div>
-                <div>
-                  <span className="text-graylight text-[14px] md:text-[16px]">
-                    Customer
-                  </span>
-                </div>
+              <div className="flex gap-2 items-center justify-start w-full">
+                <NavLink
+                  text={"Customar"}
+                  href={"/dashboard/customar"}
+                  src={icon2}
+                />
               </div>
-            </Button>
+            </Button> */}
+          <div className="pt-1 px-2 md:px-5 w-full">
+            <NavLink
+              text={"Customar"}
+              href={"/dashboard/customar"}
+              src={icon2}
+            />
           </div>
+
           <div className="px-2 md:px-5 ">
             <Button
               className="border-none h-[52px] w-full text-start flex justify-start shadow-none"

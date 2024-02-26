@@ -27,13 +27,13 @@ export function SearchBox() {
       <div>
         <Button
           onClick={() => handleSearchBox()}
-          className="shadow-none w-[40x] h-[40px] rounded bg-[#f7f7fd]"
+          className="shadow-none w-[40x] h-[40px] rounded-xl bg-[#f7f7fd]"
           variant="outline"
         >
           {isSearchBox ? (
             <GrClose className="text-[25px] text-graylight" />
           ) : (
-            <Image alt="" src={searchi} />
+            <Image alt="" className="w-full h-full select-none" src={searchi} />
           )}
         </Button>
       </div>
