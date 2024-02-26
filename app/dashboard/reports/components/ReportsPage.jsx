@@ -110,7 +110,7 @@ function ReportsPage() {
               </div>
             </div>
           </div>
-          <div className="col-span-12 xl:col-span-5 2xl:col-span-4 bg-white p-3 md:p-5">
+          <div className="col-span-12 xl:col-span-5 2xl:col-span-4 bg-white p-3 md:p-5 pb-5">
             <div>
               <div className="flex justify-between items-center">
                 <div>
@@ -141,7 +141,7 @@ function ReportsPage() {
             </div>
           </div>
           <div className="col-span-12 p-3 md:p-5  bg-white overflow-x-auto ">
-            <div className="w-[1000px]   lg:w-auto">
+            <div className="w-[800px]   lg:w-auto">
               <div className="grid grid-cols-12 px-3 md:px-5 pt-2">
                 <div className="col-span-6">
                   <div className="grid grid-cols-12 items-center">
