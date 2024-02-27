@@ -11,8 +11,11 @@ import eye from "@/public/auth/eye.png";
 import eye2 from "@/public/auth/eye2.png";
 import { useState } from "react";
 import { redirect } from "next/navigation";
+import { useRouter } from "next/navigation";
 
 function LoginForm() {
+  const router = useRouter();
+
   const [eyeIcon, setEyeIcon] = useState(eye);
   const [passwordBoxType, setPasswordBoxType] = useState("password");
   const formik = useFormik({
@@ -30,7 +33,7 @@ function LoginForm() {
     onSubmit: (value) => {
       // details object
       console.log(value);
-      redirect("/dashboard");
+      router.push("/dashboard");
     },
   });
 
