@@ -10,6 +10,7 @@ import * as yup from "yup";
 import eye from "@/public/auth/eye.png";
 import eye2 from "@/public/auth/eye2.png";
 import { useState } from "react";
+import { redirect } from "next/navigation";
 
 function LoginForm() {
   const [eyeIcon, setEyeIcon] = useState(eye);
@@ -29,6 +30,7 @@ function LoginForm() {
     onSubmit: (value) => {
       // details object
       console.log(value);
+      redirect("/dashboard");
     },
   });
 

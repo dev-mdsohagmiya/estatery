@@ -123,6 +123,11 @@ function CustomarPage() {
   return (
     <div>
       <div className="pl-5 pr-5 md:pr-8 py-5 bg-[#f7f7fd]">
+        <div className="pb-3 block md:hidden">
+          <h2 className="font-bold text-[22px] md:[28px] text-primary">
+            Customar
+          </h2>
+        </div>
         <div className="border-1 border-grayline bg-white py-5 rounded-[8px]">
           <div>
             <div className="flex justify-between px-3 md:px-5">

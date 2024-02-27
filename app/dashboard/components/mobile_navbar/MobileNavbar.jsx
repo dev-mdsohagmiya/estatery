@@ -207,7 +207,7 @@ export default function MobileNavbar() {
           <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink
               line={true}
-              href={"/customer"}
+              href={"/dashboard/customer"}
               src={icon2}
               text={"Customer"}
             />
@@ -216,7 +216,7 @@ export default function MobileNavbar() {
             <NavLink
               line={true}
               src={icon3}
-              href={"/property"}
+              href={"/dashboard/property"}
               text={"Property"}
             />
           </NavbarMenuItem>
@@ -224,7 +224,7 @@ export default function MobileNavbar() {
             <NavLink
               line={true}
               src={icon4}
-              href={"/reports"}
+              href={"/dashboard/reports"}
               text={"Reports"}
             />
           </NavbarMenuItem>
@@ -232,7 +232,7 @@ export default function MobileNavbar() {
             <NavLink
               src={icon5}
               line={true}
-              href={"/settings"}
+              href={"/dashboard/setting"}
               text={"Settings"}
             />
           </NavbarMenuItem>
