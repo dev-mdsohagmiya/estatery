@@ -141,7 +141,7 @@ const PropertyPage = () => {
               />
             </div>
             <div>
-            <Link href={"/add-property/step-3"}>
+            <Link href={"/add-property/step-1"}>
             <button className="bg-[#000929] text-white px-3 py-2 rounded-md flex items-center justify-center">
                 <BsPlus className="text-[22px] inline" /> <span>Add New</span>
               </button></Link>
