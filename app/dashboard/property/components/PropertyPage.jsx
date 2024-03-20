@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { BsPlus, BsThreeDotsVertical } from "react-icons/bs";
 import { CiLocationOn } from "react-icons/ci";
+import { useRouter } from "next/navigation";
 
 import {
   MdKeyboardArrowRight,
@@ -22,8 +23,10 @@ import img6 from "@/public/dashboard/property/img6.png";
 import Image from "next/image";
 import { PaginationSBR } from "@/app/components/home/sections/rent_buy_sell/Pagination";
 import { FilterBtn } from "./FilterBtn";
+import Link from "next/link";
 
 const PropertyPage = () => {
+  const router = useRouter()
   const properties = [
     {
       _id: "01",
@@ -138,9 +141,10 @@ const PropertyPage = () => {
               />
             </div>
             <div>
-              <button className="bg-[#000929] text-white px-3 py-2 rounded-md flex items-center justify-center">
+            <Link href={"/add-property/step-3"}>
+            <button className="bg-[#000929] text-white px-3 py-2 rounded-md flex items-center justify-center">
                 <BsPlus className="text-[22px] inline" /> <span>Add New</span>
-              </button>
+              </button></Link>
             </div>
           </div>
         </div>
@@ -149,9 +153,11 @@ const PropertyPage = () => {
         <div className="grid grid-cols-12 gap-6 py-10">
           {/* one */}
           {properties?.map((item) => (
+          
             <div
               key={item._id}
-              className="p-4 rounded-md border-[1px] border-grayline col-span-12 lg:col-span-6 xl:col-span-4 bg-white"
+              onClick={()=>router.push("/dashboard/property-details")}
+              className="p-4 cursor-pointer rounded-md border-[1px]  border-grayline col-span-12 lg:col-span-6 xl:col-span-4 bg-white"
             >
               <div className="relative">
                 <div className="">
@@ -207,6 +213,7 @@ const PropertyPage = () => {
                 </div>
               </div>
             </div>
+    
           ))}
         </div>
 

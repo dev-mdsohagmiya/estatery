@@ -1,18 +1,19 @@
 import leftarrow from "@/public/dashboard/property/step1/leftarrow.png";
-import step1 from "@/public/dashboard/property/step1/step1.png";
+import step3 from "@/public/dashboard/property/step3/step3.png";
+import addresscard from "@/public/dashboard/property/step3/addresscard.png";
 import Image from "next/image";
 import Link from "next/link";
-import Step1Form from "./Step1Form";
-function Step1() {
+
+
+import Step3Form from "./Step3Form";
+function Step3() {
   return (
     <div className="w-full max-w-[1350px] mx-auto px-5 md:px-8 py-[20px] md:py-[55px]">
-
-<Link href={"/dashboard/property"}>
-
-<div className="flex gap-3 items-center md:gap-5">
+   <Link href={"/dashboard/add-property"}>
+   <div className="flex gap-3 items-center md:gap-5">
         <div>
           <div className="w-[35px] h-[35px] md:w-[44px] md:h-[44px]">
-            <Link href={"/dashboard/property"}>
+            <Link href={"#"}>
               <Image className="w-full h-full" alt="" src={leftarrow} />
             </Link>
           </div>
@@ -22,8 +23,7 @@ function Step1() {
             Add New Property
           </h2>
         </div>
-      </div>
-</Link>
+      </div></Link>
       <div className=" pt-[8px] md:pt-[20px]">
         <div className="grid gap-[10px] md:gap-[16px] justify-center">
           <div>
@@ -38,8 +38,8 @@ function Step1() {
             </h2>
           </div>
           <div className="text-center flex justify-center">
-            <div className="max-w-[354px]  ">
-              <Image alt="" className="h-full w-full select-none" src={step1} />
+            <div className="max-w-[668px] ">
+              <Image alt="" className="h-full w-full select-none"  src={step3} />
             </div>
           </div>
         </div>
@@ -47,11 +47,25 @@ function Step1() {
       <div className=" max-w-[668px] m-auto pt-5">
         <div className="bg-grayline h-[1px] w-full"></div>
       </div>
+      <div className=" max-w-[710px] m-auto pt-5">
+    <div className="w-full h-[120px]  md:h-auto">
+<Image style={{height:"100%"}} alt="" className="select-none" classNamew="w-full h-full " src={addresscard}/>
+    </div>
+      </div>
+      <div className=" max-w-[668px] m-auto pt-5">
+        <div className="bg-grayline h-[1px] w-full"></div>
+      </div>
+
+      <div className=" max-w-[668px] m-auto pt-4 pb-3">
+       <h2 className="text-primary font-bold text-[22px] md:text-[24px]">Personal Details</h2>
+       <h4 className="text-graylight font-medium text-[14px] md:text-[16px] pt-1" >Please start your profile below by filling in your personal information </h4>
+      </div>
+   
       <div>
-        <Step1Form />
+  <Step3Form/>
       </div>
     </div>
   );
 }
 
-export default Step1;
+export default Step3;

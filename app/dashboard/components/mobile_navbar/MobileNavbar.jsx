@@ -207,7 +207,7 @@ export default function MobileNavbar() {
           <NavbarMenuItem onClick={() => handleHideManu()}>
             <NavLink
               line={true}
-              href={"/dashboard/customer"}
+              href={"/dashboard/customar"}
               src={icon2}
               text={"Customer"}
             />
